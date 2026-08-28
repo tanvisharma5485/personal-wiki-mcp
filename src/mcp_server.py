@@ -14,6 +14,10 @@ mcp = FastMCP(
 )
 
 
+# --------------------------------------------------
+# DATABASE CONNECTION
+# --------------------------------------------------
+
 def get_connection():
     return psycopg2.connect(
         host=os.getenv("DB_HOST", "localhost"),
@@ -24,13 +28,79 @@ def get_connection():
     )
 
 
+# --------------------------------------------------
+# TIER ACCESS
+# --------------------------------------------------
+
+def get_allowed_tiers() -> list[int]:
+    """
+    Read allowed tiers from MCP_ALLOWED_TIERS.
+
+    Examples:
+
+    MCP 1:
+    MCP_ALLOWED_TIERS=1,2,3
+
+    MCP 2:
+    MCP_ALLOWED_TIERS=2,3
+
+    MCP 3:
+    MCP_ALLOWED_TIERS=3
+
+    If MCP_ALLOWED_TIERS is not set,
+    access defaults to all tiers (1,2,3).
+    """
+
+    raw = os.getenv("MCP_ALLOWED_TIERS", "1,2,3")
+
+    allowed = []
+
+    for value in raw.split(","):
+        value = value.strip()
+
+        if value:
+            allowed.append(int(value))
+
+    return allowed
+
+
+def tier_filter_sql():
+    """
+    Build the PostgreSQL tier filter and parameters.
+    """
+
+    allowed_tiers = get_allowed_tiers()
+
+    placeholders = ", ".join(["%s"] * len(allowed_tiers))
+
+    return f"tier IN ({placeholders})", allowed_tiers
+
+
+# --------------------------------------------------
+# MCP TOOL: LIST WIKI PAGES
+# --------------------------------------------------
+
 @mcp.tool()
 def list_wiki_pages() -> list[str]:
-    """Return all available wiki page titles."""
+    """
+    Return wiki page titles accessible to this MCP.
+    """
+
     conn = get_connection()
     cur = conn.cursor()
 
-    cur.execute("SELECT title FROM wiki_pages ORDER BY title;")
+    tier_sql, tier_params = tier_filter_sql()
+
+    cur.execute(
+        f"""
+        SELECT title
+        FROM wiki_pages
+        WHERE {tier_sql}
+        ORDER BY title;
+        """,
+        tier_params,
+    )
+
     rows = cur.fetchall()
 
     cur.close()
@@ -39,15 +109,30 @@ def list_wiki_pages() -> list[str]:
     return [row[0] for row in rows]
 
 
+# --------------------------------------------------
+# MCP TOOL: GET WIKI PAGE
+# --------------------------------------------------
+
 @mcp.tool()
 def get_wiki_page(title: str) -> str:
-    """Return the full Markdown content of a wiki page by title."""
+    """
+    Return full Markdown content of a page
+    only if this MCP has access to its tier.
+    """
+
     conn = get_connection()
     cur = conn.cursor()
 
+    tier_sql, tier_params = tier_filter_sql()
+
     cur.execute(
-        "SELECT content FROM wiki_pages WHERE LOWER(title) = LOWER(%s);",
-        (title,),
+        f"""
+        SELECT content
+        FROM wiki_pages
+        WHERE LOWER(title) = LOWER(%s)
+          AND {tier_sql};
+        """,
+        [title] + tier_params,
     )
 
     row = cur.fetchone()
@@ -56,31 +141,50 @@ def get_wiki_page(title: str) -> str:
     conn.close()
 
     if row is None:
-        return f"No wiki page found for: {title}"
+        return f"No accessible wiki page found for: {title}"
 
     return row[0]
 
 
+# --------------------------------------------------
+# MCP TOOL: SEARCH WIKI
+# --------------------------------------------------
+
 @mcp.tool()
 def search_wiki(query: str, limit: int = 10) -> list[dict]:
-    """Search wiki titles and Markdown content using PostgreSQL text matching."""
+    """
+    Search titles and content only within tiers
+    accessible to this MCP.
+    """
+
     conn = get_connection()
     cur = conn.cursor()
 
     search_term = f"%{query}%"
 
+    tier_sql, tier_params = tier_filter_sql()
+
     cur.execute(
-        """
+        f"""
         SELECT title, LEFT(content, 500)
         FROM wiki_pages
-        WHERE title ILIKE %s
-           OR content ILIKE %s
+        WHERE (
+            title ILIKE %s
+            OR content ILIKE %s
+        )
+        AND {tier_sql}
         ORDER BY
             CASE WHEN title ILIKE %s THEN 0 ELSE 1 END,
             title
         LIMIT %s;
         """,
-        (search_term, search_term, search_term, limit),
+        [
+            search_term,
+            search_term,
+            *tier_params,
+            search_term,
+            limit,
+        ],
     )
 
     rows = cur.fetchall()
@@ -97,8 +201,27 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
     ]
 
 
+# --------------------------------------------------
+# MCP TOOL: ACCESS INFORMATION
+# --------------------------------------------------
+
+@mcp.tool()
+def get_mcp_access_info() -> dict:
+    """
+    Show which database tiers this MCP can access.
+    """
+
+    allowed_tiers = get_allowed_tiers()
+
+    return {
+        "allowed_tiers": allowed_tiers,
+        "description": f"This MCP can access tiers: {allowed_tiers}",
+    }
 
 
+# --------------------------------------------------
+# START MCP SERVER
+# --------------------------------------------------
 
 if __name__ == "__main__":
     mcp.run(transport="streamable-http")
