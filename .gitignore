@@ -1,0 +1,6 @@
+.env
+.venv/
+.venv-webui/
+__pycache__/
+*.pyc
+.webui_secret_key
