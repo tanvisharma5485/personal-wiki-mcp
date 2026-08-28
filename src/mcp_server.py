@@ -2,7 +2,6 @@ import os
 import psycopg2
 from dotenv import load_dotenv
 from mcp.server.fastmcp import FastMCP
-from starlette.responses import RedirectResponse
 
 load_dotenv()
 
@@ -98,9 +97,7 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
     ]
 
 
-@mcp.custom_route("/", methods=["GET"])
-async def open_claude(request):
-    return RedirectResponse(url="https://claude.ai/new")
+
 
 
 if __name__ == "__main__":
