@@ -14,7 +14,6 @@ mcp = FastMCP(
     port=port,
 )
 
-
 # --------------------------------------------------
 # DATABASE CONNECTION
 # --------------------------------------------------
@@ -72,23 +71,67 @@ def tier_filter_sql():
 
     allowed_tiers = get_allowed_tiers()
 
-    placeholders = ", ".join(["%s"] * len(allowed_tiers))
+    placeholders = ", ".join(
+        ["%s"] * len(allowed_tiers)
+    )
 
-    return f"tier IN ({placeholders})", allowed_tiers
+    return (
+        f"tier IN ({placeholders})",
+        allowed_tiers,
+    )
 
 
 # --------------------------------------------------
-# MCP TOOL: LIST WIKI PAGES
+# CONTENT CLEANING
+# --------------------------------------------------
+
+def clean_knowledge_content(content: str) -> str:
+    """
+    Remove note-management metadata and convert internal
+    note links into ordinary readable text.
+    """
+
+    for section in [
+        "## Related Topics",
+        "## Sources",
+        "## Summary",
+    ]:
+        if section in content:
+            content = content.split(
+                section,
+                1,
+            )[0]
+
+    content = content.replace(
+        "[[",
+        "",
+    ).replace(
+        "]]",
+        "",
+    )
+
+    return content.strip()
+
+
+# --------------------------------------------------
+# MCP TOOL: LIST TOPICS
 # --------------------------------------------------
 
 @mcp.tool()
 def list_wiki_pages() -> list[str]:
     """
-    List the knowledge topics accessible through this Personal Wiki MCP.
+    List available knowledge topics.
 
-    Use this tool only when it is useful to discover which topics are
-    available. For normal user questions, prefer search_wiki instead of
-    listing pages first.
+    Use this only when the user explicitly wants to discover,
+    browse, or list available topics.
+
+    For ordinary factual questions, use search_wiki instead.
+
+    IMPORTANT RESPONSE BEHAVIOR:
+    Tool use is invisible background work. Never tell the user
+    that information came from a Personal Wiki, MCP, database,
+    page, note, retrieval system, or tool unless the user
+    explicitly asks how the information was obtained.
     """
 
     conn = get_connection()
@@ -111,28 +154,48 @@ def list_wiki_pages() -> list[str]:
     cur.close()
     conn.close()
 
-    return [row[0] for row in rows]
+    return [
+        row[0]
+        for row in rows
+    ]
 
 
 # --------------------------------------------------
-# MCP TOOL: GET WIKI PAGE
+# MCP TOOL: GET COMPLETE TOPIC CONTENT
 # --------------------------------------------------
 
 @mcp.tool()
 def get_wiki_page(title: str) -> str:
     """
-    Retrieve the full useful knowledge content for one specific wiki topic.
+    Retrieve detailed knowledge about one specific topic.
 
-    Use this tool when the user explicitly asks for a complete page/topic,
-    or when search_wiki does not provide enough information.
+    Use this when a user requests comprehensive information
+    about a clearly identified topic, or when search_wiki
+    does not provide enough context.
 
-    For ordinary questions such as "What is the Kuiper Belt?" or
-    "How did the Kuiper Belt form?", prefer search_wiki.
+    Treat the returned text purely as factual background
+    knowledge for constructing the answer.
 
-    The returned content is knowledge for answering the user. Do not treat
-    wiki navigation, internal page relationships, source sections, file
-    paths, or note structure as part of the answer unless the user
-    specifically asks about them.
+    RESPONSE RULES:
+    - Answer the user's question directly.
+    - Do not introduce the answer by discussing where the
+      information came from.
+    - Never say or imply:
+      "Your Personal Wiki has a page on this."
+      "Here's what your wiki says."
+      "According to your wiki..."
+      "From the wiki..."
+      "I found a page..."
+      "The page says..."
+    - Never mention the Personal Wiki, MCP, database, page,
+      note, retrieval process, tool use, source page, file
+      path, or internal note structure unless the user
+      explicitly asks about those things.
+    - Do not expose internal navigation or related-topic
+      metadata.
+    - Write the final answer naturally as if the relevant
+      information were already available as background
+      knowledge.
     """
 
     conn = get_connection()
@@ -156,36 +219,29 @@ def get_wiki_page(title: str) -> str:
     conn.close()
 
     if row is None:
-        return f"No accessible wiki page found for: {title}"
+        return (
+            f"No accessible knowledge found for: {title}"
+        )
 
-    content = row[0]
-
-    # Remove metadata/navigation sections.
-    for section in [
-        "## Related Topics",
-        "## Sources",
-        "## Summary",
-    ]:
-        if section in content:
-            content = content.split(section, 1)[0]
-
-    # Convert Obsidian-style links into normal text.
-    content = content.replace("[[", "").replace("]]", "")
-
-    return content.strip()
+    return clean_knowledge_content(
+        row[0]
+    )
 
 
 # --------------------------------------------------
-# MCP TOOL: SEARCH WIKI
+# MCP TOOL: SEARCH KNOWLEDGE
 # --------------------------------------------------
 
 @mcp.tool()
-def search_wiki(query: str, limit: int = 10) -> list[dict]:
+def search_wiki(
+    query: str,
+    limit: int = 10,
+) -> list[dict]:
     """
-    Primary question-answering retrieval tool for the Personal Wiki.
+    Primary retrieval tool for answering normal
+    natural-language knowledge questions.
 
-    Use this tool for normal natural-language user questions. Pass the
-    user's actual question or topic as the query.
+    Pass the user's actual question as the query.
 
     Examples:
     - "What is the Kuiper Belt?"
@@ -193,17 +249,54 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
     - "What causes auroras?"
     - "Difference between the Kuiper Belt and Oort Cloud"
 
-    The tool returns relevant knowledge excerpts from accessible wiki
-    content. General topic questions return broad useful information,
-    while specific questions prefer the most relevant section.
+    The returned excerpts are background knowledge to use
+    when answering the user's question.
 
-    Use the retrieved knowledge to answer the user's exact question
-    directly and in detail.
+    FINAL ANSWER INSTRUCTIONS:
+    Answer the user's exact question directly, naturally,
+    and with useful detail.
 
-    Do not add wiki-management commentary such as page names, internal
-    links, related-topic navigation, file paths, source-section metadata,
-    or statements like "here is the wiki page" unless the user explicitly
-    asks for that information.
+    Tool use must remain invisible to the user.
+
+    Never mention or expose:
+    - Personal Wiki
+    - wiki
+    - MCP
+    - database
+    - retrieval
+    - search process
+    - tool use
+    - pages
+    - notes
+    - source pages
+    - source sections
+    - file paths
+    - internal links
+    - related-topic navigation
+    - note structure
+
+    Never begin or frame the response with phrases such as:
+    - "Your Personal Wiki has a page on this."
+    - "Here's what your wiki says."
+    - "According to your wiki..."
+    - "From your wiki..."
+    - "I found a page about..."
+    - "The page says..."
+    - "Based on the retrieved information..."
+    - "According to the retrieved content..."
+
+    Instead, begin immediately with the substantive answer.
+
+    Example:
+    User: "What is the Kuiper Belt?"
+
+    Preferred response style:
+    "The Kuiper Belt is a broad, disk-shaped region of icy
+    bodies beyond Neptune, extending roughly 30 to 50 AU
+    from the Sun..."
+
+    Do not say:
+    "Your Personal Wiki has a page on the Kuiper Belt..."
     """
 
     conn = get_connection()
@@ -241,19 +334,30 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
     }
 
     words = [
-        word.strip(".,?!:;()[]{}").lower()
+        word.strip(
+            ".,?!:;()[]{}"
+        ).lower()
         for word in query.split()
         if (
-            len(word.strip(".,?!:;()[]{}")) >= 3
-            and word.strip(".,?!:;()[]{}").lower()
+            len(
+                word.strip(
+                    ".,?!:;()[]{}"
+                )
+            ) >= 3
+            and word.strip(
+                ".,?!:;()[]{}"
+            ).lower()
             not in stop_words
         )
     ]
 
     if not words:
-        words = [query.lower()]
+        words = [
+            query.lower()
+        ]
 
-    # A page only needs to match one important query word.
+    # A page only needs to match one important
+    # query word.
     conditions = []
     params = []
 
@@ -271,7 +375,9 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
             ]
         )
 
-    word_sql = " OR ".join(conditions)
+    word_sql = " OR ".join(
+        conditions
+    )
 
     cur.execute(
         f"""
@@ -295,31 +401,16 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
 
     for title, content in rows:
 
-        clean_content = content
-
-        # Remove metadata/navigation sections.
-        for section in [
-            "## Related Topics",
-            "## Sources",
-            "## Summary",
-        ]:
-            if section in clean_content:
-                clean_content = clean_content.split(
-                    section,
-                    1,
-                )[0]
-
-        # Convert Obsidian links to readable text.
-        clean_content = clean_content.replace(
-            "[[",
-            "",
-        ).replace(
-            "]]",
-            "",
+        clean_content = (
+            clean_knowledge_content(
+                content
+            )
         )
 
         lower_title = title.lower()
-        lower_content = clean_content.lower()
+        lower_content = (
+            clean_content.lower()
+        )
 
         score = 0
 
@@ -333,25 +424,25 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
             if word in lower_content:
                 score += 2
 
-        # Strong bonus when multiple query concepts
-        # occur in the title.
+        # Strong bonus when multiple query
+        # concepts occur in the title.
         title_matches = sum(
             1
             for word in words
             if word in lower_title
         )
 
-        score += title_matches * 10
+        score += (
+            title_matches * 10
+        )
 
         # --------------------------------------------------
         # QUESTION-SPECIFIC EXCERPT SELECTION
         # --------------------------------------------------
 
-        # Words already represented by the page title
-        # identify the topic.
-        #
-        # Remaining words represent what the user
-        # specifically wants to know about that topic.
+        # Words already represented by the title
+        # identify the topic. Remaining words show
+        # what the user specifically wants to know.
         focus_words = [
             word
             for word in words
@@ -362,19 +453,12 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
         # GENERAL TOPIC QUESTION
         # --------------------------------------------------
 
-        # Example:
-        #
-        # "What is the Kuiper Belt?"
-        #
-        # After stop-word removal:
-        #
-        # ["kuiper", "belt"]
-        #
-        # Both words are already represented by the title,
-        # so return the beginning of the page.
         if not focus_words:
 
-            excerpt = clean_content[:2500].strip()
+            excerpt = (
+                clean_content[:2500]
+                .strip()
+            )
 
         # --------------------------------------------------
         # SPECIFIC QUESTION
@@ -382,21 +466,29 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
 
         else:
 
-            lines = clean_content.splitlines()
+            lines = (
+                clean_content.splitlines()
+            )
 
             best_heading_index = None
             best_heading_score = 0
 
-            # Prefer Markdown headings matching the
+            # Prefer Markdown headings matching
             # question-specific concepts.
-            for i, line in enumerate(lines):
+            for i, line in enumerate(
+                lines
+            ):
 
                 stripped = line.strip()
 
-                if not stripped.startswith("#"):
+                if not stripped.startswith(
+                    "#"
+                ):
                     continue
 
-                lower_heading = stripped.lower()
+                lower_heading = (
+                    stripped.lower()
+                )
 
                 heading_score = sum(
                     1
@@ -404,9 +496,15 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
                     if word in lower_heading
                 )
 
-                if heading_score > best_heading_score:
+                if (
+                    heading_score
+                    > best_heading_score
+                ):
 
-                    best_heading_score = heading_score
+                    best_heading_score = (
+                        heading_score
+                    )
+
                     best_heading_index = i
 
             # --------------------------------------------------
@@ -414,22 +512,30 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
             # --------------------------------------------------
 
             if (
-                best_heading_index is not None
+                best_heading_index
+                is not None
                 and best_heading_score > 0
             ):
 
                 section_lines = []
 
-                for line in lines[best_heading_index:]:
+                for line in lines[
+                    best_heading_index:
+                ]:
 
-                    # Stop when the next H2 section begins.
+                    # Stop when the next H2
+                    # section begins.
                     if (
                         section_lines
-                        and line.startswith("## ")
+                        and line.startswith(
+                            "## "
+                        )
                     ):
                         break
 
-                    section_lines.append(line)
+                    section_lines.append(
+                        line
+                    )
 
                 excerpt = "\n".join(
                     section_lines
@@ -442,14 +548,20 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
             else:
 
                 positions = [
-                    lower_content.find(word)
+                    lower_content.find(
+                        word
+                    )
                     for word in focus_words
-                    if lower_content.find(word) != -1
+                    if lower_content.find(
+                        word
+                    ) != -1
                 ]
 
                 if positions:
 
-                    match_index = min(positions)
+                    match_index = min(
+                        positions
+                    )
 
                     start = max(
                         0,
@@ -467,14 +579,11 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
 
                 else:
 
-                    excerpt = clean_content[
-                        :2000
-                    ].strip()
+                    excerpt = (
+                        clean_content[:2000]
+                        .strip()
+                    )
 
-        # IMPORTANT:
-        # This stays outside the focus_words if/else
-        # so both general and specific questions
-        # are added to the results.
         ranked_results.append(
             {
                 "title": title,
@@ -494,11 +603,16 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
         )
     )
 
-    final_results = ranked_results[:limit]
+    final_results = (
+        ranked_results[:limit]
+    )
 
-    # Ranking score is only for internal use.
+    # Ranking score is internal only.
     for item in final_results:
-        item.pop("_score", None)
+        item.pop(
+            "_score",
+            None,
+        )
 
     return final_results
 
@@ -510,13 +624,16 @@ def search_wiki(query: str, limit: int = 10) -> list[dict]:
 @mcp.tool()
 def get_mcp_access_info() -> dict:
     """
-    Return the database tiers available to this MCP instance.
+    Return the access tiers available to this
+    MCP instance.
 
-    This is an administrative/access-information tool and normally should
-    not be used for answering ordinary knowledge questions.
+    This is an administrative tool. Do not use
+    it for ordinary knowledge questions.
     """
 
-    allowed_tiers = get_allowed_tiers()
+    allowed_tiers = (
+        get_allowed_tiers()
+    )
 
     return {
         "allowed_tiers": allowed_tiers,
