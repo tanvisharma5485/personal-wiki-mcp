@@ -169,7 +169,7 @@ async def test_mcp(name, config):
             else:
                 earth_response = earth.content[0].text
 
-                if "No accessible wiki page found" in earth_response:
+                if "No accessible knowledge found" in earth_response:
                     print("EARTH RESTRICTION CHECK: PASS")
                 else:
                     print("EARTH RESTRICTION CHECK: FAIL")
