@@ -1,6 +1,23 @@
-.env
+﻿.env
 .venv/
-.venv-webui/
 __pycache__/
 *.pyc
-.webui_secret_key
+
+# Local database backups
+*.dump
+
+# Remote database backups
+remote_*_before_*.json
+
+# Temporary encoding repair files
+encoding_backup/
+repair_*encoding*.py
+repair_*question_marks.py
+
+# Temporary development backups
+*_backup.py
+agent_before_*.py
+*_dry_run_backup.py
+
+# Local editor / Obsidian configuration
+.obsidian/

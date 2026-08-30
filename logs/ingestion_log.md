@@ -1,5 +1,27 @@
-﻿# Ingestion Log
+# Ingestion Log
 
+## 2026-08-29 - Ten-topic raw-to-wiki ingestion
+
+* Raw files processed: `Aurora.md`, `Eclipses.md`, `Exoplanets.md`, `Heliosphere.md`, `Kuiper Belt.md`, `Lagrange Points.md`, `Meteoroids, Meteors and Meteorites.md`, `Near-Earth Objects.md`, `Oort Cloud.md`, and `Solar Wind.md`.
+* Notes created: [[Aurora]], [[Eclipses]], [[Exoplanets]], [[Heliosphere]], [[Kuiper Belt]], [[Lagrange Points]], [[Meteoroids, Meteors and Meteorites]], [[Near-Earth Objects]], [[Oort Cloud]], and [[Solar Wind]].
+* Notes updated: `wiki/index.md` and this ingestion log only; no existing concept note required merging.
+* Duplicate review: All ten topics were checked against the 49 existing Markdown files and the index. Broader notes contain related material, but none is closely equivalent to these detailed standalone topics.
+* Important links added: Cross-links among the ten new notes and existing notes including [[Sun]], [[Earth]], [[Moon]], [[Orbital Dynamics]], [[Space Environment]], [[Planetary Magnetism]], [[Planetary Atmospheres]], [[Outer Solar System Reservoirs]], [[Small Solar System Bodies]], [[Planetary Defense]], [[Comets]], and [[Solar System Missions]].
+* Index updates: Added each new note exactly once under Foundations, Worlds beyond the Solar System, Dwarf planets and small bodies, Planetary processes, or Observational phenomena.
+* Raw safety: Source files were read only and were not modified.
+
+### Source records
+
+* `raw/Aurora.md` - created [[Aurora]]; linked auroral physics to [[Solar Wind]], [[Heliosphere]], [[Space Environment]], and [[Planetary Magnetism]].
+* `raw/Eclipses.md` - created [[Eclipses]]; linked eclipse geometry and observation to [[Sun]], [[Earth]], [[Moon]], [[Orbital Dynamics]], and [[Planetary Observation]].
+* `raw/Exoplanets.md` - created [[Exoplanets]]; linked detection, characterization, formation, and habitability to [[Planetary Observation]], [[Planetary Habitability]], [[Planetary Atmospheres]], and [[Solar System Formation]].
+* `raw/Heliosphere.md` - created [[Heliosphere]]; linked solar-wind boundaries and interstellar interaction to [[Sun]], [[Solar Wind]], [[Space Environment]], and [[Oort Cloud]].
+* `raw/Kuiper Belt.md` - created [[Kuiper Belt]]; linked its populations and dynamics to [[Outer Solar System Reservoirs]], [[Dwarf Planets]], [[Comets]], and [[Orbital Dynamics]].
+* `raw/Lagrange Points.md` - created [[Lagrange Points]]; linked equilibrium regions and mission uses to [[Orbital Dynamics]], [[Solar System Missions]], and [[Planetary Observation]].
+* `raw/Meteoroids, Meteors and Meteorites.md` - created [[Meteoroids, Meteors and Meteorites]]; linked atmospheric entry and samples to [[Asteroids]], [[Comets]], [[Impact Cratering]], and [[Solar System Formation]].
+* `raw/Near-Earth Objects.md` - created [[Near-Earth Objects]]; linked discovery and hazard assessment to [[Planetary Defense]], [[Asteroids]], [[Comets]], and [[Small-Body Exploration]].
+* `raw/Oort Cloud.md` - created [[Oort Cloud]]; linked the distant comet reservoir to [[Comets]], [[Outer Solar System Reservoirs]], [[Solar System Formation]], and [[Orbital Dynamics]].
+* `raw/Solar Wind.md` - created [[Solar Wind]]; linked coronal plasma flow to [[Sun]], [[Heliosphere]], [[Aurora]], [[Space Environment]], and [[Planetary Magnetism]].
 ## 2026-08-27 15:14:11 +05:30 - Full raw/wiki reconciliation
 
 * Raw files examined: 555 Markdown files recursively under `raw/`.
@@ -105,7 +127,7 @@
 
 Processed the complete raw corpus on 2026-08-27. Raw files were read-only and remain unchanged.
 
-## 2026-08-27 â€” Complete Solar System corpus
+## 2026-08-27 ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Complete Solar System corpus
 
 ### raw/comprehensive_solar_system_545_files (1)/01_Core_Solar_System/001_solar_system_overview.md
 
@@ -3922,3 +3944,293 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes updated: None
 * Important links added: [[Planetary Atmospheres]], [[Planetary Interiors]], [[Planetary Magnetism]], [[Planetary Surfaces]], [[Solar System Formation]]
 
+## Top-level source ingestion - 2026-08-30
+
+### raw/Asteroid Belt.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Asteroid Belt]]
+* Notes updated: None
+* Important links added: [[Asteroids]], [[Ceres]], [[Vesta]], [[Mars]], [[Jupiter]], [[Solar System Formation]], [[Planet Formation]], [[Planetary Migration]], [[Orbital Dynamics]], [[Near-Earth Objects]], [[Trojan Asteroids]], [[Small Solar System Bodies]], [[Meteoroids, Meteors and Meteorites]], [[Planetary Defense]], [[Water in the Solar System]], [[Dwarf Planets]], [[Comets]], [[Kuiper Belt]], [[Planetary Differentiation]], [[Space Exploration]]
+
+### raw/Atmospheric Escape.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Atmospheric Escape]]
+* Notes updated: None
+* Important links added: [[Planetary Atmospheres]], [[Planetary Evolution]], [[Planetary Habitability]], [[Planetary Magnetism]], [[Solar Wind]], [[Heliosphere]], [[Space Weather]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Earth's Magnetosphere]], [[Earth]], [[Venus]], [[Mars]], [[Mercury]], [[Moon]], [[Titan]], [[Europa]], [[Ganymede]], [[Enceladus]], [[Io]], [[Triton]], [[Pluto]], [[Water in the Solar System]], [[Planet Formation]], [[Planetary Migration]], [[Exoplanets]]
+
+### raw/Cassini-Huygens.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Cassini-Huygens]]
+* Notes updated: None
+* Important links added: [[Saturn]], [[Titan]], [[Enceladus]], [[Rhea]], [[Iapetus]], [[Mimas]], [[Planetary Rings]], [[Planetary Atmospheres]], [[Planetary Magnetism]], [[Tides]], [[Orbital Dynamics]], [[Water in the Solar System]], [[Planetary Habitability]], [[Space Environment]], [[Solar Wind]], [[Aurora]], [[Space Exploration]], [[Solar System Missions]], [[Voyager Program]], [[Pioneer Program]]
+
+### raw/Centaurs.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Centaurs]]
+* Notes updated: None
+* Important links added: [[Kuiper Belt]], [[Scattered Disc]], [[Trans-Neptunian Objects]], [[Comets]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Trojan Asteroids]], [[Asteroids]], [[Small Solar System Bodies]], [[Orbital Dynamics]], [[Planetary Migration]], [[Solar System Formation]], [[Oort Cloud]], [[Planetary Defense]], [[Space Exploration]]
+
+### raw/Charon.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Charon]]
+* Notes updated: None
+* Important links added: [[Pluto]], [[Natural Satellites]], [[Trans-Neptunian Objects]], [[Kuiper Belt]], [[Tides]], [[Planetary Tectonics]], [[Planetary Differentiation]], [[Cryovolcanism]], [[Impact Cratering]], [[Planet Formation]], [[Solar System Formation]], [[New Horizons]], [[Water in the Solar System]], [[Orbital Dynamics]]
+
+### raw/Coronal Mass Ejections.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Coronal Mass Ejections]]
+* Notes updated: None
+* Important links added: [[Sun]], [[Solar Flares]], [[Sunspots]], [[Solar Corona]], [[Solar Magnetic Field]], [[Solar Cycle]], [[Solar Wind]], [[Space Weather]], [[Heliosphere]], [[Aurora]], [[Earth's Magnetosphere]], [[Earth's Ionosphere]], [[Van Allen Radiation Belts]], [[Planetary Magnetism]], [[Planetary Atmospheres]], [[Atmospheric Escape]], [[Mars]], [[Venus]], [[Mercury]], [[Moon]], [[Exoplanets]], [[Planetary Habitability]], [[Space Environment]], [[Space Exploration]]
+
+### raw/Cryovolcanism.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Cryovolcanism]]
+* Notes updated: None
+* Important links added: [[Planetary Volcanism]], [[Planetary Tectonics]], [[Planetary Interiors]], [[Planetary Differentiation]], [[Planetary Evolution]], [[Planetary Habitability]], [[Water in the Solar System]], [[Tides]], [[Enceladus]], [[Europa]], [[Ganymede]], [[Callisto]], [[Titan]], [[Triton]], [[Pluto]], [[Ceres]], [[Charon]], [[Miranda]], [[Ariel]], [[Mimas]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Exoplanets]]
+
+### raw/Deimos.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Deimos]]
+* Notes updated: None
+* Important links added: [[Mars]], [[Phobos]], [[Natural Satellites]], [[Tides]], [[Orbital Dynamics]], [[Impact Cratering]], [[Planet Formation]], [[Planetary Evolution]], [[Planetary Rings]], [[Space Exploration]], [[Mars Exploration]], [[Asteroid Belt]], [[Small Solar System Bodies]]
+
+### raw/Earth's Ionosphere.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Earth's Ionosphere]]
+* Notes updated: None
+* Important links added: [[Earth]], [[Earth's Magnetosphere]], [[Van Allen Radiation Belts]], [[Solar Wind]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Solar Magnetic Field]], [[Solar Cycle]], [[Space Weather]], [[Aurora]], [[Atmospheric Escape]], [[Planetary Atmospheres]], [[Planetary Magnetism]], [[Space Environment]], [[Planetary Habitability]]
+
+### raw/Earth's Magnetosphere.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Earth's Magnetosphere]]
+* Notes updated: None
+* Important links added: [[Earth]], [[Earth's Ionosphere]], [[Van Allen Radiation Belts]], [[Solar Wind]], [[Solar Magnetic Field]], [[Solar Cycle]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Space Weather]], [[Aurora]], [[Heliosphere]], [[Planetary Magnetism]], [[Planetary Atmospheres]], [[Atmospheric Escape]], [[Moon]], [[Mercury]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Space Environment]], [[Planetary Habitability]], [[Exoplanets]]
+
+### raw/Haumea.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Haumea]]
+* Notes updated: None
+* Important links added: [[Trans-Neptunian Objects]], [[Kuiper Belt]], [[Dwarf Planets]], [[Pluto]], [[Sedna]], [[Neptune]], [[Planetary Differentiation]], [[Planet Formation]], [[Planetary Migration]], [[Orbital Dynamics]], [[Cryovolcanism]], [[Water in the Solar System]], [[Small Solar System Bodies]], [[Impact Cratering]]
+
+### raw/Iapetus.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Iapetus]]
+* Notes updated: None
+* Important links added: [[Saturn]], [[Titan]], [[Rhea]], [[Enceladus]], [[Natural Satellites]], [[Tides]], [[Impact Cratering]], [[Planetary Evolution]], [[Planetary Differentiation]], [[Planetary Rings]], [[Space Environment]], [[Water in the Solar System]], [[Cassini-Huygens]], [[Planet Formation]], [[Orbital Dynamics]]
+
+### raw/James Webb Space Telescope.md
+
+* Date processed: 2026-08-30
+* Notes created: [[James Webb Space Telescope]]
+* Notes updated: None
+* Important links added: [[Solar System]], [[Space Exploration]], [[Solar System Missions]], [[Lagrange Points]], [[Planet Formation]], [[Solar System Formation]], [[Planetary Atmospheres]], [[Planetary Habitability]], [[Asteroids]], [[Comets]], [[Kuiper Belt]], [[Trans-Neptunian Objects]], [[Pluto]], [[Haumea]], [[Makemake]], [[Sedna]], [[Mars]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[New Horizons]], [[Voyager Program]], [[Cassini-Huygens]]
+
+### raw/Lunar Exploration.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Lunar Exploration]]
+* Notes updated: None
+* Important links added: [[Moon]], [[Lunar Geology]], [[Earth]], [[Tides]], [[Solar System Formation]], [[Planet Formation]], [[Planetary Differentiation]], [[Impact Cratering]], [[Water in the Solar System]], [[Space Exploration]], [[Solar System Missions]], [[Planetary Observation]], [[Space Environment]], [[Van Allen Radiation Belts]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Space Weather]], [[Mars Exploration]]
+
+### raw/Lunar Geology.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Lunar Geology]]
+* Notes updated: None
+* Important links added: [[Moon]], [[Lunar Exploration]], [[Earth]], [[Solar System Formation]], [[Planet Formation]], [[Planetary Differentiation]], [[Planetary Interiors]], [[Planetary Surfaces]], [[Planetary Volcanism]], [[Planetary Tectonics]], [[Impact Cratering]], [[Space Weather]], [[Meteoroids, Meteors and Meteorites]], [[Water in the Solar System]], [[Tides]], [[Planetary Evolution]], [[Planetary Observation]], [[Space Exploration]]
+
+### raw/Makemake.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Makemake]]
+* Notes updated: None
+* Important links added: [[Trans-Neptunian Objects]], [[Kuiper Belt]], [[Dwarf Planets]], [[Pluto]], [[Haumea]], [[Sedna]], [[Neptune]], [[Planet Formation]], [[Planetary Migration]], [[Planetary Differentiation]], [[Cryovolcanism]], [[Water in the Solar System]], [[New Horizons]], [[James Webb Space Telescope]], [[Orbital Dynamics]]
+
+### raw/Mars Exploration.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Mars Exploration]]
+* Notes updated: None
+* Important links added: [[Mars]], [[Phobos]], [[Deimos]], [[Water in the Solar System]], [[Planetary Habitability]], [[Planetary Atmospheres]], [[Atmospheric Escape]], [[Planetary Magnetism]], [[Planetary Volcanism]], [[Planetary Tectonics]], [[Planetary Evolution]], [[Impact Cratering]], [[Solar Wind]], [[Solar Flares]], [[Space Environment]], [[Orbital Dynamics]], [[Space Exploration]], [[Solar System Missions]], [[Voyager Program]], [[Pioneer Program]]
+
+### raw/Mimas.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Mimas]]
+* Notes updated: None
+* Important links added: [[Saturn]], [[Enceladus]], [[Rhea]], [[Titan]], [[Iapetus]], [[Natural Satellites]], [[Tides]], [[Orbital Dynamics]], [[Planetary Rings]], [[Impact Cratering]], [[Water in the Solar System]], [[Planetary Evolution]], [[Planet Formation]], [[Cassini-Huygens]]
+
+### raw/Miranda.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Miranda]]
+* Notes updated: None
+* Important links added: [[Uranus]], [[Natural Satellites]], [[Tides]], [[Orbital Dynamics]], [[Planetary Tectonics]], [[Cryovolcanism]], [[Planetary Differentiation]], [[Impact Cratering]], [[Water in the Solar System]], [[Planetary Evolution]], [[Space Environment]], [[Mimas]], [[Enceladus]], [[Charon]]
+
+### raw/New Horizons.md
+
+* Date processed: 2026-08-30
+* Notes created: [[New Horizons]]
+* Notes updated: None
+* Important links added: [[Pluto]], [[Charon]], [[Kuiper Belt]], [[Trans-Neptunian Objects]], [[Dwarf Planets]], [[Jupiter]], [[Io]], [[Planet Formation]], [[Solar System Formation]], [[Cryovolcanism]], [[Planetary Tectonics]], [[Planetary Atmospheres]], [[Atmospheric Escape]], [[Water in the Solar System]], [[Solar Wind]], [[Heliosphere]], [[Orbital Dynamics]], [[Space Exploration]], [[Solar System Missions]], [[Voyager Program]], [[Pioneer Program]]
+
+### raw/Phobos.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Phobos]]
+* Notes updated: None
+* Important links added: [[Mars]], [[Deimos]], [[Natural Satellites]], [[Tides]], [[Orbital Dynamics]], [[Impact Cratering]], [[Planet Formation]], [[Planetary Rings]], [[Planetary Evolution]], [[Space Exploration]], [[Mars Exploration]], [[Small Solar System Bodies]]
+
+### raw/Planet Formation.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Planet Formation]]
+* Notes updated: None
+* Important links added: [[Solar System Formation]], [[Planetary Migration]], [[Planetary Differentiation]], [[Planetary Evolution]], [[Orbital Dynamics]], [[Terrestrial Planets]], [[Giant Planets]], [[Asteroid Belt]], [[Kuiper Belt]], [[Oort Cloud]], [[Meteoroids, Meteors and Meteorites]], [[Earth]], [[Mars]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Moon]], [[Exoplanets]], [[Planetary Habitability]], [[Water in the Solar System]], [[James Webb Space Telescope]]
+
+### raw/Planetary Differentiation.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Planetary Differentiation]]
+* Notes updated: None
+* Important links added: [[Planet Formation]], [[Planetary Migration]], [[Planetary Interiors]], [[Planetary Evolution]], [[Planetary Volcanism]], [[Planetary Tectonics]], [[Planetary Magnetism]], [[Earth]], [[Moon]], [[Lunar Geology]], [[Mercury]], [[Venus]], [[Mars]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Vesta]], [[Ceres]], [[Pluto]], [[Europa]], [[Ganymede]], [[Callisto]], [[Enceladus]], [[Titan]], [[Solar System Formation]]
+
+### raw/Planetary Migration.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Planetary Migration]]
+* Notes updated: None
+* Important links added: [[Planet Formation]], [[Solar System Formation]], [[Orbital Dynamics]], [[Exoplanets]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Pluto]], [[Kuiper Belt]], [[Asteroid Belt]], [[Centaurs]], [[Scattered Disc]], [[Oort Cloud]], [[Lagrange Points]], [[Phobos]], [[Deimos]], [[Tides]], [[Planetary Evolution]], [[Planetary Habitability]]
+
+### raw/Planetary Tectonics.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Planetary Tectonics]]
+* Notes updated: None
+* Important links added: [[Planetary Interiors]], [[Planetary Differentiation]], [[Planetary Volcanism]], [[Planetary Evolution]], [[Planetary Surfaces]], [[Planetary Magnetism]], [[Planetary Habitability]], [[Earth]], [[Mercury]], [[Venus]], [[Moon]], [[Lunar Geology]], [[Mars]], [[Europa]], [[Ganymede]], [[Enceladus]], [[Titan]], [[Miranda]], [[Triton]], [[Pluto]], [[Ceres]], [[Tides]], [[Impact Cratering]], [[Space Exploration]]
+
+### raw/Planetary Volcanism.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Planetary Volcanism]]
+* Notes updated: None
+* Important links added: [[Planetary Interiors]], [[Planetary Differentiation]], [[Planetary Tectonics]], [[Planetary Evolution]], [[Planetary Surfaces]], [[Cryovolcanism]], [[Planetary Habitability]], [[Earth]], [[Mercury]], [[Venus]], [[Moon]], [[Lunar Geology]], [[Mars]], [[Jupiter]], [[Io]], [[Europa]], [[Ganymede]], [[Enceladus]], [[Titan]], [[Triton]], [[Pluto]], [[Ceres]], [[Vesta]], [[Tides]], [[Space Exploration]]
+
+### raw/Rhea.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Rhea]]
+* Notes updated: None
+* Important links added: [[Saturn]], [[Titan]], [[Enceladus]], [[Natural Satellites]], [[Planetary Tectonics]], [[Planetary Differentiation]], [[Impact Cratering]], [[Tides]], [[Planetary Rings]], [[Space Environment]], [[Water in the Solar System]], [[Cassini-Huygens]], [[Planet Formation]], [[Planetary Evolution]]
+
+### raw/Scattered Disc.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Scattered Disc]]
+* Notes updated: None
+* Important links added: [[Trans-Neptunian Objects]], [[Kuiper Belt]], [[Neptune]], [[Centaurs]], [[Comets]], [[Oort Cloud]], [[Sedna]], [[Dwarf Planets]], [[Pluto]], [[Planetary Migration]], [[Planet Formation]], [[Solar System Formation]], [[Orbital Dynamics]], [[Small Solar System Bodies]], [[New Horizons]]
+
+### raw/Sedna.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Sedna]]
+* Notes updated: None
+* Important links added: [[Trans-Neptunian Objects]], [[Scattered Disc]], [[Kuiper Belt]], [[Oort Cloud]], [[Neptune]], [[Planetary Migration]], [[Orbital Dynamics]], [[Solar System Formation]], [[Dwarf Planets]], [[Centaurs]], [[Comets]], [[Planetary Differentiation]], [[Cryovolcanism]], [[James Webb Space Telescope]]
+
+### raw/Solar Corona.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Solar Corona]]
+* Notes updated: None
+* Important links added: [[Sun]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Sunspots]], [[Solar Magnetic Field]], [[Solar Cycle]], [[Solar Wind]], [[Heliosphere]], [[Space Weather]], [[Aurora]], [[Planetary Magnetism]], [[Space Environment]], [[Planetary Atmospheres]], [[Atmospheric Escape]], [[Exoplanets]], [[Planetary Habitability]], [[Parker Solar Probe]], [[Solar Orbiter]]
+
+### raw/Solar Cycle.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Solar Cycle]]
+* Notes updated: None
+* Important links added: [[Sun]], [[Sunspots]], [[Solar Magnetic Field]], [[Solar Corona]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Solar Wind]], [[Heliosphere]], [[Space Weather]], [[Aurora]], [[Earth's Magnetosphere]], [[Space Environment]], [[Planetary Magnetism]], [[Planetary Atmospheres]], [[Exoplanets]], [[Planetary Habitability]]
+
+### raw/Solar Flares.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Solar Flares]]
+* Notes updated: None
+* Important links added: [[Sun]], [[Sunspots]], [[Solar Corona]], [[Solar Magnetic Field]], [[Solar Cycle]], [[Solar Wind]], [[Coronal Mass Ejections]], [[Space Weather]], [[Heliosphere]], [[Aurora]], [[Earth's Magnetosphere]], [[Earth's Ionosphere]], [[Planetary Magnetism]], [[Space Environment]], [[Planetary Atmospheres]], [[Planetary Habitability]], [[Exoplanets]], [[Space Exploration]]
+
+### raw/Solar Magnetic Field.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Solar Magnetic Field]]
+* Notes updated: None
+* Important links added: [[Sun]], [[Sunspots]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Solar Corona]], [[Solar Cycle]], [[Solar Wind]], [[Heliosphere]], [[Space Weather]], [[Aurora]], [[Earth's Magnetosphere]], [[Planetary Magnetism]], [[Space Environment]], [[Atmospheric Escape]], [[Exoplanets]], [[Planetary Habitability]]
+
+### raw/Space Weather.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Space Weather]]
+* Notes updated: None
+* Important links added: [[Sun]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Sunspots]], [[Solar Corona]], [[Solar Magnetic Field]], [[Solar Cycle]], [[Solar Wind]], [[Heliosphere]], [[Aurora]], [[Earth's Magnetosphere]], [[Earth's Ionosphere]], [[Van Allen Radiation Belts]], [[Planetary Magnetism]], [[Planetary Atmospheres]], [[Atmospheric Escape]], [[Space Environment]], [[Space Exploration]], [[Planetary Habitability]], [[Exoplanets]]
+
+### raw/Sunspots.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Sunspots]]
+* Notes updated: None
+* Important links added: [[Sun]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Solar Corona]], [[Solar Magnetic Field]], [[Solar Cycle]], [[Solar Wind]], [[Space Weather]], [[Heliosphere]], [[Aurora]], [[Earth's Magnetosphere]], [[Space Environment]], [[Planetary Magnetism]], [[Exoplanets]], [[Planetary Habitability]]
+
+### raw/Tides.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Tides]]
+* Notes updated: None
+* Important links added: [[Moon]], [[Earth]], [[Lunar Geology]], [[Lunar Exploration]], [[Orbital Dynamics]], [[Solar System Formation]], [[Planetary Evolution]], [[Planetary Interiors]], [[Planetary Volcanism]], [[Io]], [[Europa]], [[Ganymede]], [[Enceladus]], [[Phobos]], [[Deimos]], [[Planetary Habitability]], [[Exoplanets]], [[Water in the Solar System]]
+
+### raw/Trans-Neptunian Objects.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Trans-Neptunian Objects]]
+* Notes updated: None
+* Important links added: [[Kuiper Belt]], [[Scattered Disc]], [[Centaurs]], [[Neptune]], [[Pluto]], [[Dwarf Planets]], [[Planetary Migration]], [[Planet Formation]], [[Solar System Formation]], [[Orbital Dynamics]], [[Comets]], [[Oort Cloud]], [[Cryovolcanism]], [[Water in the Solar System]], [[Small Solar System Bodies]], [[Space Exploration]], [[New Horizons]]
+
+### raw/Trojan Asteroids.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Trojan Asteroids]]
+* Notes updated: None
+* Important links added: [[Lagrange Points]], [[Orbital Dynamics]], [[Jupiter]], [[Mars]], [[Earth]], [[Neptune]], [[Saturn]], [[Planetary Migration]], [[Solar System Formation]], [[Planet Formation]], [[Asteroid Belt]], [[Asteroids]], [[Near-Earth Objects]], [[Centaurs]], [[Kuiper Belt]], [[Comets]], [[Small Solar System Bodies]], [[Space Exploration]]
+
+### raw/Van Allen Radiation Belts.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Van Allen Radiation Belts]]
+* Notes updated: None
+* Important links added: [[Earth]], [[Earth's Magnetosphere]], [[Earth's Ionosphere]], [[Solar Wind]], [[Solar Magnetic Field]], [[Solar Cycle]], [[Solar Flares]], [[Coronal Mass Ejections]], [[Space Weather]], [[Aurora]], [[Planetary Magnetism]], [[Space Environment]], [[Space Exploration]], [[Moon]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Planetary Habitability]]
+
+### raw/Voyager Program.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Voyager Program]]
+* Notes updated: None
+* Important links added: [[Space Exploration]], [[Solar System Missions]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Io]], [[Europa]], [[Ganymede]], [[Callisto]], [[Titan]], [[Miranda]], [[Triton]], [[Planetary Rings]], [[Solar Wind]], [[Heliosphere]], [[Oort Cloud]], [[Kuiper Belt]], [[Cassini-Huygens]], [[New Horizons]]
+
+## Top-level source ingestion - 2026-08-30
+
+### raw/Pioneer Program.md
+
+* Date processed: 2026-08-30
+* Notes created: [[Pioneer Program]]
+* Notes updated: None
+* Important links added: [[Space Exploration]], [[Solar System Missions]], [[Voyager Program]], [[Jupiter]], [[Saturn]], [[Asteroid Belt]], [[Solar Wind]], [[Heliosphere]], [[Planetary Magnetism]], [[Planetary Rings]], [[Space Environment]], [[Orbital Dynamics]], [[Oort Cloud]], [[Kuiper Belt]], [[Cassini-Huygens]], [[New Horizons]]
