@@ -122,16 +122,14 @@ def list_wiki_pages() -> list[str]:
     """
     List available knowledge topics.
 
-    Use this only when the user explicitly wants to discover,
-    browse, or list available topics.
+    Use this tool when the user wants to discover, browse,
+    or list the topics available through this MCP service.
 
-    For ordinary factual questions, use search_wiki instead.
+    For ordinary factual questions, prefer search_wiki.
 
-    IMPORTANT RESPONSE BEHAVIOR:
-    Tool use is invisible background work. Never tell the user
-    that information came from a Personal Wiki, MCP, database,
-    page, note, retrieval system, or tool unless the user
-    explicitly asks how the information was obtained.
+    Present results clearly and concisely. Do not add unnecessary
+    implementation details unless the user asks about the MCP,
+    data source, retrieval process, or system architecture.
     """
 
     conn = get_connection()
@@ -169,33 +167,21 @@ def get_wiki_page(title: str) -> str:
     """
     Retrieve detailed knowledge about one specific topic.
 
-    Use this when a user requests comprehensive information
-    about a clearly identified topic, or when search_wiki
-    does not provide enough context.
+    Use this when the user requests comprehensive information
+    about a clearly identified topic, or when search_wiki does
+    not provide enough context.
 
-    Treat the returned text purely as factual background
-    knowledge for constructing the answer.
+    Use the returned content to answer the user's question
+    accurately and directly.
 
-    RESPONSE RULES:
-    - Answer the user's question directly.
-    - Do not introduce the answer by discussing where the
-      information came from.
-    - Never say or imply:
-      "Your Personal Wiki has a page on this."
-      "Here's what your wiki says."
-      "According to your wiki..."
-      "From the wiki..."
-      "I found a page..."
-      "The page says..."
-    - Never mention the Personal Wiki, MCP, database, page,
-      note, retrieval process, tool use, source page, file
-      path, or internal note structure unless the user
-      explicitly asks about those things.
-    - Do not expose internal navigation or related-topic
-      metadata.
-    - Write the final answer naturally as if the relevant
-      information were already available as background
-      knowledge.
+    RESPONSE GUIDANCE:
+    - Focus on the substantive information requested by the user.
+    - Answer naturally and with useful detail.
+    - Avoid unnecessary commentary about page structure,
+      internal links, file paths, or navigation metadata.
+    - If the user explicitly asks where the information came
+      from or how it was retrieved, answer transparently.
+    - Do not claim that inaccessible information was retrieved.
     """
 
     conn = get_connection()
@@ -238,8 +224,8 @@ def search_wiki(
     limit: int = 10,
 ) -> list[dict]:
     """
-    Primary retrieval tool for answering normal
-    natural-language knowledge questions.
+    Primary retrieval tool for answering natural-language
+    knowledge questions.
 
     Pass the user's actual question as the query.
 
@@ -249,54 +235,21 @@ def search_wiki(
     - "What causes auroras?"
     - "Difference between the Kuiper Belt and Oort Cloud"
 
-    The returned excerpts are background knowledge to use
-    when answering the user's question.
+    Use the returned excerpts as supporting knowledge for the
+    user's question.
 
-    FINAL ANSWER INSTRUCTIONS:
-    Answer the user's exact question directly, naturally,
-    and with useful detail.
-
-    Tool use must remain invisible to the user.
-
-    Never mention or expose:
-    - Personal Wiki
-    - wiki
-    - MCP
-    - database
-    - retrieval
-    - search process
-    - tool use
-    - pages
-    - notes
-    - source pages
-    - source sections
-    - file paths
-    - internal links
-    - related-topic navigation
-    - note structure
-
-    Never begin or frame the response with phrases such as:
-    - "Your Personal Wiki has a page on this."
-    - "Here's what your wiki says."
-    - "According to your wiki..."
-    - "From your wiki..."
-    - "I found a page about..."
-    - "The page says..."
-    - "Based on the retrieved information..."
-    - "According to the retrieved content..."
-
-    Instead, begin immediately with the substantive answer.
-
-    Example:
-    User: "What is the Kuiper Belt?"
-
-    Preferred response style:
-    "The Kuiper Belt is a broad, disk-shaped region of icy
-    bodies beyond Neptune, extending roughly 30 to 50 AU
-    from the Sun..."
-
-    Do not say:
-    "Your Personal Wiki has a page on the Kuiper Belt..."
+    RESPONSE GUIDANCE:
+    - Answer the user's exact question directly and naturally.
+    - Prefer relevant retrieved content over unrelated material.
+    - Do not expose internal file paths, note structure,
+      navigation metadata, or unrelated retrieved sections.
+    - Do not claim that restricted or unavailable information
+      was retrieved.
+    - If the user explicitly asks about the source, MCP,
+      retrieval process, or tool usage, answer transparently.
+    - If retrieval does not provide enough information, make
+      that limitation clear rather than implying that the MCP
+      returned information it did not provide.
     """
 
     conn = get_connection()
