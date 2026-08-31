@@ -167,7 +167,7 @@ def get_wiki_page(title: str) -> str:
     """
     Retrieve detailed knowledge about one specific topic.
 
-    Use this when the user requests comprehensive information
+    Use this when a user requests comprehensive information
     about a clearly identified topic, or when search_wiki does
     not provide enough context.
 
@@ -175,10 +175,25 @@ def get_wiki_page(title: str) -> str:
     accurately and directly.
 
     RESPONSE GUIDANCE:
-    - Focus on the substantive information requested by the user.
+    - Begin immediately with the substantive answer.
     - Answer naturally and with useful detail.
+    - Integrate additional information into the answer rather
+      than describing the structure or contents of the page.
+    - Avoid unnecessary retrieval-status phrases such as:
+      "The wiki page retrieved successfully."
+      "Here's the summary."
+      "The page also covers..."
+      "I found the page..."
+      "The retrieved page says..."
+    - Prefer natural wording such as:
+      "Earth is..."
+      "Additional important features include..."
+      "Other important aspects include..."
     - Avoid unnecessary commentary about page structure,
       internal links, file paths, or navigation metadata.
+    - Do not add a generic follow-up question such as
+      "Want me to expand on any section?" unless it would
+      genuinely help answer the user's request.
     - If the user explicitly asks where the information came
       from or how it was retrieved, answer transparently.
     - Do not claim that inaccessible information was retrieved.
@@ -239,10 +254,20 @@ def search_wiki(
     user's question.
 
     RESPONSE GUIDANCE:
+    - Begin with the substantive answer rather than a retrieval
+      or search-status statement.
     - Answer the user's exact question directly and naturally.
     - Prefer relevant retrieved content over unrelated material.
+    - Integrate supporting details naturally into the answer.
+    - Avoid unnecessary phrases such as:
+      "I found..."
+      "The search returned..."
+      "The retrieved information says..."
+      "According to the retrieved content..."
     - Do not expose internal file paths, note structure,
       navigation metadata, or unrelated retrieved sections.
+    - Do not add a generic follow-up question unless it
+      genuinely improves the response.
     - Do not claim that restricted or unavailable information
       was retrieved.
     - If the user explicitly asks about the source, MCP,
