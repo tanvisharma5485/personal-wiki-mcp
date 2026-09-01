@@ -26,3 +26,6 @@ agent_before_*.py
 ingest_new_pages.py
 ingest_new_pages_commit.py
 ingest_remote_pages_commit.py
+
+# Saved conversation threads
+threads/

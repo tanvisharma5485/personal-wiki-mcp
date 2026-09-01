@@ -1,7 +1,10 @@
 import os
+
 import psycopg2
 from dotenv import load_dotenv
 from mcp.server.fastmcp import FastMCP
+
+from thread_saver import save_thread_message
 
 
 load_dotenv()
@@ -13,6 +16,7 @@ mcp = FastMCP(
     host="0.0.0.0",
     port=port,
 )
+
 
 # --------------------------------------------------
 # DATABASE CONNECTION
@@ -620,6 +624,131 @@ def get_mcp_access_info() -> dict:
             f"{allowed_tiers}"
         ),
     }
+
+
+# --------------------------------------------------
+# SAVE CONVERSATION FUNCTION
+# --------------------------------------------------
+
+def save_conversation(
+    user_prompt: str,
+    assistant_response: str,
+    thread_id: str,
+    thread_name: str,
+    user_name: str = "Tanvi",
+) -> dict:
+    """
+    Save one Personal Wiki conversation turn.
+
+    When exposed as an MCP tool, call this after preparing
+    the response and before completing the user's turn.
+
+    IMPORTANT:
+    - Pass the original user prompt.
+    - Pass the exact prepared assistant response.
+    - Do not summarize or rewrite either value.
+    - Reuse the same thread_id for follow-up messages.
+    - Reuse the original thread_name for follow-up messages.
+    - After a successful save, present assistant_response
+      unchanged to the user.
+
+    PostgreSQL is always used for durable storage.
+
+    Markdown is additionally written when SAVE_MARKDOWN=true.
+    """
+
+    # Validate without altering the original prompt/response.
+    if not user_prompt or not user_prompt.strip():
+        return {
+            "saved": False,
+            "error": "user_prompt cannot be empty.",
+        }
+
+    if (
+        not assistant_response
+        or not assistant_response.strip()
+    ):
+        return {
+            "saved": False,
+            "error": "assistant_response cannot be empty.",
+        }
+
+    if not thread_id or not thread_id.strip():
+        return {
+            "saved": False,
+            "error": "thread_id cannot be empty.",
+        }
+
+    if not thread_name or not thread_name.strip():
+        return {
+            "saved": False,
+            "error": "thread_name cannot be empty.",
+        }
+
+    thread_id = thread_id.strip()
+    thread_name = thread_name.strip()
+    user_name = (
+        user_name.strip()
+        if user_name and user_name.strip()
+        else "Tanvi"
+    )
+
+    try:
+        file_path = save_thread_message(
+            user_name=user_name,
+            thread_id=thread_id,
+            thread_name=thread_name,
+            user_prompt=user_prompt,
+            ai_response=assistant_response,
+        )
+
+        return {
+            "saved": True,
+            "thread_id": thread_id,
+            "thread_name": thread_name,
+            "storage": {
+                "postgresql": True,
+                "markdown": file_path is not None,
+            },
+            "markdown_file": (
+                str(file_path)
+                if file_path is not None
+                else None
+            ),
+        }
+
+    except Exception as exc:
+        return {
+            "saved": False,
+            "thread_id": thread_id,
+            "error": (
+                "Conversation could not be saved: "
+                f"{type(exc).__name__}"
+            ),
+        }
+
+
+# --------------------------------------------------
+# OPTIONAL CONVERSATION-SAVING TOOL
+# --------------------------------------------------
+
+ENABLE_CONVERSATION_SAVE = (
+    os.getenv(
+        "ENABLE_CONVERSATION_SAVE",
+        "false",
+    )
+    .strip()
+    .lower()
+    in (
+        "1",
+        "true",
+        "yes",
+        "on",
+    )
+)
+
+if ENABLE_CONVERSATION_SAVE:
+    mcp.tool()(save_conversation)
 
 
 # --------------------------------------------------
