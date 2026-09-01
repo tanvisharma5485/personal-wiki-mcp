@@ -17,6 +17,9 @@ from mcp.server.auth.settings import (
     ClientRegistrationOptions,
 )
 from mcp.server.fastmcp import FastMCP
+from mcp.server.transport_security import (
+    TransportSecuritySettings,
+)
 from mcp.shared.auth import (
     OAuthClientInformationFull,
     OAuthToken,
@@ -286,10 +289,26 @@ auth_settings = AuthSettings(
 )
 
 
+transport_security = TransportSecuritySettings(
+    allowed_hosts=[
+        "personal-wiki-oauth-test.onrender.com",
+        "personal-wiki-oauth-test.onrender.com:*",
+        "127.0.0.1",
+        "127.0.0.1:*",
+        "localhost",
+        "localhost:*",
+    ],
+    allowed_origins=[
+        "https://claude.ai",
+    ],
+)
+
+
 mcp = FastMCP(
     "personal-wiki-oauth-test",
     auth_server_provider=provider,
     auth=auth_settings,
+    transport_security=transport_security,
 )
 
 
