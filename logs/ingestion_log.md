@@ -4272,3 +4272,13 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes updated: [[Planetary Tectonics]]
 * Important links added: [[Mercury]], [[Moon]], [[Mars]], [[Venus]], [[Io]], [[Europa]], [[Enceladus]]
 * Duplicate pages avoided: Consolidated non-plate-tectonic activity, stagnant-lid behavior, and episodic-lid behavior in [[Planetary Tectonics]] rather than creating an overlapping page.
+
+## Changed source ingestion - 2026-09-02
+
+### raw/comprehensive_solar_system_545_files (1)/23_Habitability_Life/381_planetary_habitability.md
+
+* Date processed: 2026-09-02
+* Notes created: None
+* Notes updated: [[Planetary Habitability]]
+* Important links added: [[Venus]], [[Exoplanets]], [[Atmospheric Escape]], [[Planetary Magnetism]], [[Planetary Tectonics]], [[Planetary Volcanism]], [[Planetary Interiors]], [[Planetary Evolution]], [[Cryovolcanism]], [[Comparative Planetology]]
+* Duplicate pages avoided: Reused [[Planetary Habitability]] for the equivalent source concept and kept habitable-zone, biosignature, ocean-world, and astrobiology material consolidated there.
