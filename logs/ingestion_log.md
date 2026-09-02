@@ -4234,3 +4234,13 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes created: [[Pioneer Program]]
 * Notes updated: None
 * Important links added: [[Space Exploration]], [[Solar System Missions]], [[Voyager Program]], [[Jupiter]], [[Saturn]], [[Asteroid Belt]], [[Solar Wind]], [[Heliosphere]], [[Planetary Magnetism]], [[Planetary Rings]], [[Space Environment]], [[Orbital Dynamics]], [[Oort Cloud]], [[Kuiper Belt]], [[Cassini-Huygens]], [[New Horizons]]
+
+## Changed source ingestion - 2026-09-02
+
+### raw/comprehensive_solar_system_545_files (1)/32_Cross_Concept/531_planetary_evolution_comparison.md
+
+* Date processed: 2026-09-02
+* Notes created: None
+* Notes updated: [[Planetary Evolution]]
+* Important links added: [[Comparative Planetology]], [[Planetary Differentiation]], [[Planetary Tectonics]], [[Planetary Volcanism]], [[Atmospheric Escape]], [[Water in the Solar System]], [[Planetary Habitability]], [[Planetary Migration]], [[Mercury]], [[Venus]], [[Earth]], [[Mars]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Io]], [[Europa]], [[Enceladus]]
+* Duplicate pages avoided: Reused [[Planetary Evolution]] for the equivalent source concept.

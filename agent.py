@@ -82,12 +82,11 @@ def save_state(state):
 # SOURCE DISCOVERY
 # --------------------------------------------------
 
-def get_top_level_raw_files():
+def get_raw_files():
     return sorted(
-        RAW_DIR.glob("*.md"),
-        key=lambda p: p.name.lower()
+        RAW_DIR.rglob("*.md"),
+        key=lambda p: p.as_posix().lower()
     )
-
 
 def find_changed_sources(raw_files, state):
     changed = []
@@ -231,11 +230,17 @@ Perform the wiki maintenance.
     print()
 
     result = subprocess.run(
-        [CODEX_CMD, "exec", "-"],
-        cwd=Path.cwd(),
-        input=prompt,
-        text=True
-    )
+    [
+        CODEX_CMD,
+        "exec",
+        "--sandbox",
+        "workspace-write",
+        "-"
+    ],
+    cwd=Path.cwd(),
+    input=prompt,
+    text=True
+)
 
     return result.returncode
 
@@ -245,15 +250,15 @@ Perform the wiki maintenance.
 # --------------------------------------------------
 
 def main():
-    raw_files = get_top_level_raw_files()
+    raw_files = get_raw_files()
 
     print(
-        f"Top-level raw Markdown files: {len(raw_files)}"
+       f"Raw Markdown files: {len(raw_files)}"
     )
 
     if not raw_files:
-        print("No top-level raw Markdown files found.")
-        return
+       print("No raw Markdown files found.")
+       return
 
     state = load_state()
 
