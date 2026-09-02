@@ -4282,3 +4282,14 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes updated: [[Planetary Habitability]]
 * Important links added: [[Venus]], [[Exoplanets]], [[Atmospheric Escape]], [[Planetary Magnetism]], [[Planetary Tectonics]], [[Planetary Volcanism]], [[Planetary Interiors]], [[Planetary Evolution]], [[Cryovolcanism]], [[Comparative Planetology]]
 * Duplicate pages avoided: Reused [[Planetary Habitability]] for the equivalent source concept and kept habitable-zone, biosignature, ocean-world, and astrobiology material consolidated there.
+
+## Changed source ingestion - 2026-09-02
+
+### raw/comprehensive_solar_system_545_files (1)/17_Atmospheres_Weather/321_planetary_atmospheres.md
+
+* Date processed: 2026-09-02
+* Notes created: None
+* Notes updated: [[Planetary Atmospheres]]
+* Notes left unchanged: [[Atmospheric Escape]], [[Planetary Habitability]], [[Planetary Evolution]], [[Exoplanets]], and individual world pages already preserved their valid specialized knowledge.
+* Important links added: [[Mercury]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Titan]], [[Pluto]], [[Atmospheric Escape]], [[Planetary Evolution]], [[Planetary Magnetism]], [[Planetary Volcanism]], [[Comparative Planetology]], [[Exoplanets]]
+* Duplicate pages avoided: Reused [[Planetary Atmospheres]] for the equivalent source concept and kept atmospheric escape, habitability, evolution, and world-specific details consolidated in their existing pages.
