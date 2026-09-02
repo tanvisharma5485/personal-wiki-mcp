@@ -4244,3 +4244,13 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes updated: [[Planetary Evolution]]
 * Important links added: [[Comparative Planetology]], [[Planetary Differentiation]], [[Planetary Tectonics]], [[Planetary Volcanism]], [[Atmospheric Escape]], [[Water in the Solar System]], [[Planetary Habitability]], [[Planetary Migration]], [[Mercury]], [[Venus]], [[Earth]], [[Mars]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Io]], [[Europa]], [[Enceladus]]
 * Duplicate pages avoided: Reused [[Planetary Evolution]] for the equivalent source concept.
+
+## 2026-09-02
+
+### raw/comprehensive_solar_system_545_files (1)/19_Magnetism/345_planetary_magnetic_fields.md
+
+* Date processed: 2026-09-02
+* Notes created: None
+* Notes updated: [[Planetary Magnetism]], [[Ganymede]], [[Europa]], [[Callisto]]
+* Important links added: [[Atmospheric Escape]], [[Aurora]], [[Earth's Magnetosphere]], [[Io]], [[Planetary Atmospheres]], [[Planetary Evolution]], [[Planetary Habitability]], [[Solar Magnetic Field]], [[Solar Wind]], [[Water in the Solar System]]
+* Duplicate pages avoided: Kept planetary dynamos, induced fields, crustal remanence, and magnetospheres consolidated in [[Planetary Magnetism]] rather than creating equivalent pages.
