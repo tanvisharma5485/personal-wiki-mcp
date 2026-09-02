@@ -1,5 +1,27 @@
 # Ingestion Log
 
+## Changed planetary-interior source ingestion - 2026-09-03
+
+* Raw files processed: 8 specified core, mantle, and differentiation sources.
+* Notes created: None.
+* Notes updated: [[Planetary Interiors]] and [[Planetary Differentiation]].
+* Notes left unchanged: [[Mercury]], [[Earth]], [[Jupiter]], [[Planetary Evolution]], and [[Solar System Formation]] already contained and attributed their relevant specialized knowledge. `wiki/index.md` required no change because no page was created and both updated concepts were already indexed.
+* Important links added or repaired: Connected cores, mantles, core-mantle coupling, differentiation mechanisms, element partitioning, giant-planet interiors, and world examples to existing process and planet pages; repaired escaped links in [[Planetary Differentiation]].
+* Duplicate pages avoided: Reused [[Planetary Interiors]] and [[Planetary Differentiation]] rather than creating Planetary Cores, Planetary Mantles, Core Formation, Mercury Core, Earth Core, Earth Mantle, or Jupiter Core pages.
+* Raw safety: All listed sources were read only; no raw file was modified, moved, renamed, or deleted.
+* Failures: None.
+
+### Source records
+
+* `raw/comprehensive_solar_system_545_files (1)/03_Mercury/048_mercury_core.md` - [[Mercury]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/05_Earth/086_earth_core.md` - [[Earth]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/05_Earth/087_earth_mantle.md` - [[Earth]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/08_Jupiter/166_jupiter_core.md` - [[Jupiter]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/18_Interiors_Composition/334_planetary_cores.md` - updated [[Planetary Interiors]].
+* `raw/comprehensive_solar_system_545_files (1)/18_Interiors_Composition/335_planetary_mantles.md` - updated [[Planetary Interiors]].
+* `raw/comprehensive_solar_system_545_files (1)/30_Advanced_Planetary_Science/501_planetary_differentiation.md` - updated [[Planetary Differentiation]]; [[Planetary Evolution]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/30_Advanced_Planetary_Science/502_core_formation.md` - updated [[Planetary Differentiation]]; [[Planetary Evolution]] and [[Solar System Formation]] left unchanged.
+
 ## Changed volcanic-source ingestion - 2026-09-03
 
 * Raw files processed: 12 specified volcanic and cryovolcanic sources.

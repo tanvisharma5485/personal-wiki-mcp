@@ -4,47 +4,51 @@ Planetary differentiation is the process by which a planetary body separates int
 
 This process is fundamental to the internal structure of many planets, moons, dwarf planets, asteroids, and early planetesimals.
 
-Differentiation is closely related to \[\[Planet Formation]], \[\[Planetary Interiors]], \[\[Planetary Evolution]], \[\[Planetary Volcanism]], and \[\[Planetary Magnetism]].
+Differentiation is closely related to [[Planet Formation]], [[Planetary Interiors]], [[Planetary Evolution]], [[Planetary Volcanism]], and [[Planetary Magnetism]].
 
 ## Key Points
 
-* Planetary differentiation is the gravitational and chemical separation of planetary material into layers.
-* It begins when a body becomes sufficiently hot for materials to move relative to one another. Dense metallic material can sink to form a core, while silicate rock forms a mantle and later a crust.
-* Differentiation can be driven by accretional heating, impacts, radioactive decay, gravitational energy, and tidal heating. It occurred not only in planets but also in moons, dwarf planets, and relatively small early planetesimals.
-* Earth, Mercury, Venus, Mars, the Moon, Vesta, Ganymede, and many other bodies show evidence of extensive differentiation.
-* The process determines internal density structure, influences volcanism and tectonics, enables some planetary dynamos, contributes to atmospheric outgassing, and shapes the long-term geological evolution of a world.
-* Planetary differentiation is therefore one of the fundamental processes connecting \[\[Planet Formation]] to the present-day structure and behavior of planets and moons.
+* Differentiation is gravitational and chemical separation into layers; it may be complete, partial, or incomplete depending on whether a body's interior became hot and mobile enough for large-scale segregation.
+* Accretional and impact heating, gravitational energy, radioactive decay—especially short-lived radionuclides in early planetesimals—and tidal heating can initiate or extend differentiation. Metal segregation itself releases additional gravitational energy.
+* In rocky bodies, dense metal separates from silicate to form a core. Migration may occur by grain-scale percolation, sinking metal droplets in magma, larger metallic diapirs, or core merging during impacts; a wholly molten planet is not required.
+* Magma oceans promote rapid separation and chemical exchange. Element partitioning depends on pressure, temperature, composition, and oxidation state: siderophile elements favor metal, lithophile elements favor silicates, and chalcophile elements favor sulfides.
+* Core formation may proceed in multiple stages while a planet accretes. Incoming metal need not equilibrate with the entire mantle, so mantle chemistry and isotopic systems such as hafnium-tungsten retain evidence of timing and equilibration efficiency.
+* Mantles are the silicate reservoirs left after metal separation; crusts form through later melting, melt extraction, cooling, and—in some bodies—magma-ocean crystallization. Differentiation also redistributes volatile and heat-producing elements.
+* Early radioactive heating allowed some small planetesimals to differentiate within a few million years, while large terrestrial planets continued growing and forming cores through repeated impacts over tens of millions of years.
+* Differentiation is broader than Earth-like metal-silicate separation. Icy worlds can separate rock from water-rich layers, and giant planets can develop compositionally graded heavy-element regions and processes such as helium rain.
+* The resulting density and thermal structures shape convection, [[Planetary Volcanism]], [[Planetary Tectonics]], outgassing, and possible dynamos, but differentiation or an iron-rich core does not by itself guarantee geological activity or a magnetic field.
+* Examples span the Solar System: [[Mercury]] has an unusually high metal fraction; [[Earth]] has a metallic core and silicate mantle; [[Jupiter]]'s heavy elements may occupy a dilute central region; and differences between strongly differentiated [[Ganymede]] and less completely differentiated [[Callisto]] illustrate the importance of accretion and heating history.
 
 ## Related Topics
 
-* \[\[Planet Formation]]
-* \[\[Planetary Migration]]
-* \[\[Planetary Interiors]]
-* \[\[Planetary Evolution]]
-* \[\[Planetary Volcanism]]
-* \[\[Planetary Tectonics]]
-* \[\[Planetary Magnetism]]
-* \[\[Earth]]
-* \[\[Moon]]
-* \[\[Lunar Geology]]
-* \[\[Mercury]]
-* \[\[Venus]]
-* \[\[Mars]]
-* \[\[Jupiter]]
-* \[\[Saturn]]
-* \[\[Uranus]]
-* \[\[Neptune]]
-* Vesta
-* \[\[Ceres]]
-* \[\[Pluto]]
-* \[\[Europa]]
-* \[\[Ganymede]]
-* \[\[Callisto]]
-* \[\[Enceladus]]
-* \[\[Titan]]
-* \[\[Solar System Formation]]
+* [[Planet Formation]]
+* [[Planetary Migration]]
+* [[Planetary Interiors]]
+* [[Planetary Evolution]]
+* [[Planetary Volcanism]]
+* [[Planetary Tectonics]]
+* [[Planetary Magnetism]]
+* [[Earth]]
+* [[Moon]]
+* [[Lunar Geology]]
+* [[Mercury]]
+* [[Venus]]
+* [[Mars]]
+* [[Jupiter]]
+* [[Saturn]]
+* [[Uranus]]
+* [[Neptune]]
+* [[Ceres]]
+* [[Pluto]]
+* [[Europa]]
+* [[Ganymede]]
+* [[Callisto]]
+* [[Enceladus]]
+* [[Titan]]
+* [[Solar System Formation]]
 
 ## Sources
 
 * raw/Planetary Differentiation.md
-
+* raw/comprehensive_solar_system_545_files (1)/30_Advanced_Planetary_Science/501_planetary_differentiation.md
+* raw/comprehensive_solar_system_545_files (1)/30_Advanced_Planetary_Science/502_core_formation.md

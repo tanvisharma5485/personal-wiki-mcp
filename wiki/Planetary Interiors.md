@@ -1,20 +1,32 @@
 ﻿# Planetary Interiors
 
-Planetary interiors are reconstructed indirectly from observable physical and geophysical properties.
+Planetary interiors are the layered, evolving regions beneath planetary surfaces. Their structures reflect composition, differentiation, pressure, temperature, and long-term heat loss, and are reconstructed mainly through indirect geophysical evidence.
 
 ## Key Points
 
-* Evidence includes mass, radius, gravity, rotation, magnetic fields, thermal emission, and seismic measurements where available.
-* Differentiation moves denser materials toward the center.
-* Thermal evolution governs convection, volcanism, and dynamo activity.
+* Rocky worlds commonly separate into an iron-rich metallic core, a silicate mantle, and a crust. Their cores are not pure iron: nickel and lighter elements can materially affect density, melting, crystallization, and dynamo behavior.
+* Mantles are generally solid silicate rock, not global magma layers, but can deform and convect over geological time. Pressure-driven mineral phase changes create internal boundaries, while partial melting supplies magma for [[Planetary Volcanism]].
+* Core formation is part of [[Planetary Differentiation]]: mobile dense metal migrates inward through percolation, droplets in magma, larger diapirs, and the merging of pre-existing cores during impacts. Complete melting is not always required.
+* Planetary cores evolve after formation. Cooling, crystallization, latent heat, and compositional buoyancy may sustain motion in electrically conducting fluid, but a core alone does not guarantee an active [[Planetary Magnetism|dynamo]].
+* Giant-planet “cores” differ from terrestrial metallic cores. Their deep heavy-element regions may contain rock- and ice-forming material, have gradual boundaries, and become diluted through redistribution or mixing; Jupiter is a prominent example.
+* The core-mantle boundary thermally couples the two reservoirs: mantle heat transport regulates core cooling, while interior heat helps drive convection, tectonics, volcanism, and long-term [[Planetary Evolution]].
+* Evidence includes mass and radius, bulk density, gravity and moment of inertia, rotational response, magnetic fields, thermal emission, meteorites, high-pressure experiments, and seismic measurements where available.
+* Comparisons reveal distinct outcomes: [[Mercury]] has an exceptionally large partly molten metal-rich core and thin silicate shell; [[Earth]] has a liquid outer core, solid inner core, and convecting solid mantle; [[Jupiter]] likely has an extended, compositionally graded heavy-element region rather than a sharp Earth-like core.
 
 ## Related Topics
 
 * [[Planetary Evolution]]
+* [[Planetary Differentiation]]
 * [[Planetary Magnetism]]
+* [[Planet Formation]]
+* [[Planetary Volcanism]]
+* [[Planetary Tectonics]]
 * [[Planetary Surfaces]]
 * [[Terrestrial Planets]]
 * [[Giant Planets]]
+* [[Mercury]]
+* [[Earth]]
+* [[Jupiter]]
 
 ## Sources
 
