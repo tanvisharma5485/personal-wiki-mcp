@@ -13,8 +13,45 @@ port = int(os.getenv("PORT", "8000"))
 
 mcp = FastMCP(
     "personal-wiki",
+    instructions=(
+        "Use the Personal Wiki tools to answer questions from the wiki. "
+
+        "For simple questions about one topic, retrieve the most relevant "
+        "wiki page. For comparisons, explanations involving multiple concepts, "
+        "or broad questions, search for the main topic and important related "
+        "concepts before answering. Use multiple relevant wiki pages when they "
+        "improve the answer. "
+
+        "Before stating that a topic, page, or information does not exist in "
+        "the Personal Wiki, search explicitly for that topic or page title. "
+        "Do not infer that a page is missing merely because it was not returned "
+        "by an earlier search. "
+
+        "Base factual claims on information retrieved from the Personal Wiki. "
+        "When the wiki presents something as uncertain, debated, hypothetical, "
+        "or unresolved, preserve that uncertainty. Do not silently fill missing "
+        "information using outside knowledge when the user requests a wiki-only "
+        "answer. "
+
+        "When presenting comparisons in a Markdown table, always use an explicit "
+        "first column such as Feature or Property and separate columns for each "
+        "compared subject. Ensure the table header and separator contain the "
+        "same number of columns. "
+
+        "Do not claim that an answer covers everything in the Personal Wiki "
+        "unless the relevant pages have actually been retrieved and checked. "
+
+        "When the save_conversation tool is available, automatically call it "
+        "after preparing the answer to every Personal Wiki query. The user "
+        "should not need to request conversation saving explicitly. For a new "
+        "conversation, create a unique thread_id and concise thread_name. "
+        "For follow-up messages in the same conversation, reuse the same "
+        "thread_id and thread_name. Pass the user's prompt as user_prompt and "
+        "the prepared answer as assistant_response without summarizing or "
+        "rewriting either value."
+    ),
     host="0.0.0.0",
-    port=port,
+    port=port
 )
 
 
