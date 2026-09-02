@@ -4293,3 +4293,14 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes left unchanged: [[Atmospheric Escape]], [[Planetary Habitability]], [[Planetary Evolution]], [[Exoplanets]], and individual world pages already preserved their valid specialized knowledge.
 * Important links added: [[Mercury]], [[Jupiter]], [[Saturn]], [[Uranus]], [[Neptune]], [[Titan]], [[Pluto]], [[Atmospheric Escape]], [[Planetary Evolution]], [[Planetary Magnetism]], [[Planetary Volcanism]], [[Comparative Planetology]], [[Exoplanets]]
 * Duplicate pages avoided: Reused [[Planetary Atmospheres]] for the equivalent source concept and kept atmospheric escape, habitability, evolution, and world-specific details consolidated in their existing pages.
+
+## Changed source ingestion - 2026-09-02
+
+### raw/comprehensive_solar_system_545_files (1)/17_Atmospheres_Weather/330_atmospheric_escape.md
+
+* Date processed: 2026-09-02
+* Notes created: None
+* Notes updated: [[Atmospheric Escape]]
+* Notes left unchanged: [[Planetary Atmospheres]], [[Planetary Evolution]], [[Planetary Habitability]], [[Planetary Magnetism]], [[Water in the Solar System]], [[Exoplanets]], and individual world pages retained their existing specialized knowledge.
+* Important links added: No new link targets; existing links were retained while their relationships to escape mechanisms, water loss, replenishment, magnetic environments, and exoplanet evolution were clarified.
+* Duplicate pages avoided: Reused [[Atmospheric Escape]] and kept its thermal, non-thermal, water-loss, observational, and exoplanet material consolidated rather than creating separate overlapping pages.
