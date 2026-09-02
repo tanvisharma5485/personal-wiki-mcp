@@ -4,9 +4,11 @@ Io is Jupiter's intensely tidally heated moon and the most volcanically active k
 
 ## Key Points
 
-* Orbital forcing converts tidal deformation into internal heat.
-* Its activity demonstrates that small worlds can remain geologically active without Earth-like plate tectonics.
-* Io's environment is linked to Jupiter's satellite system and magnetosphere.
+* The 1:2:4 Laplace resonance with [[Europa]] and [[Ganymede]] helps preserve Io's orbital eccentricity. Jupiter's changing tidal pull repeatedly deforms Io and converts orbital energy into internal heat.
+* Hundreds of volcanic centers include irregular paterae, fissures, lava lakes, flows, plume sources, and thermal hotspots. Loki Patera is an exceptionally powerful, variable thermal source; Pele and Prometheus produce prominent or persistent plume activity.
+* Directly observed plumes, changing flows, hotspots, and rapid resurfacing establish active silicate volcanism. Io's scarcity of recognizable impact craters reflects repeated burial and destruction of older terrain.
+* Sulfur dioxide frost and volcanic gases contribute to Io's tenuous atmosphere and colored deposits. Escaping sulfur- and oxygen-bearing material becomes ionized in Jupiter's magnetosphere and feeds the Io plasma torus.
+* Io demonstrates that a small world can remain intensely active without Earth-like plate tectonics, though the distribution of melting and any global partially molten layer remain under investigation.
 
 ## Related Topics
 
@@ -14,6 +16,14 @@ Io is Jupiter's intensely tidally heated moon and the most volcanically active k
 * [[Natural Satellites]]
 * [[Orbital Dynamics]]
 * [[Planetary Surfaces]]
+* [[Planetary Volcanism]]
+* [[Planetary Interiors]]
+* [[Planetary Tectonics]]
+* [[Tides]]
+* [[Europa]]
+* [[Ganymede]]
+* [[Enceladus]]
+* [[Planetary Magnetism]]
 
 ## Sources
 

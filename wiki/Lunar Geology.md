@@ -77,6 +77,10 @@ As a result, many features formed billions of years ago remain visible today.
 * Moon formation
 * Because geological recycling is limited, the Moon preserves an ancient record that has largely been erased from Earth.
 * Understanding lunar geology is therefore central to planetary science, Solar System chronology, future lunar exploration, and studies of the origin of the Earth-Moon system.
+* Ancient low-viscosity basalt flows could develop insulated roofs while molten lava continued beneath them; drainage then left hollow lava tubes. Open channels, roofed tubes, collapsed trenches, sinuous rilles, and isolated skylights are related but not interchangeable features.
+* Candidate skylights include pits at Marius Hills, Mare Tranquillitatis, and Mare Ingenii. Their volcanic settings and overhangs support subsurface-cavity interpretations, but most tube dimensions and connections remain inferred rather than directly mapped.
+* Low gravity and weak erosion may allow large tubes to survive for billions of years. Their roofs could shield future explorers from radiation, micrometeoroids, and temperature swings, but stability, access, dust, communications, and resources require direct investigation; tubes are not automatically safe or ice-bearing.
+* Tube interiors could preserve lava layering and materials protected from surface space weathering, making orbital imaging, radar, thermal measurements, gravity data, and robotic entry complementary tools for testing their geometry and history.
 
 ## Related Topics
 
@@ -102,3 +106,4 @@ As a result, many features formed billions of years ago remain visible today.
 ## Sources
 
 * raw/Lunar Geology.md
+* raw/comprehensive_solar_system_545_files (1)/06_The_Moon/119_lunar_lava_tubes.md

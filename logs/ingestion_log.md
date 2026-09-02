@@ -1,5 +1,31 @@
 # Ingestion Log
 
+## Changed volcanic-source ingestion - 2026-09-03
+
+* Raw files processed: 12 specified volcanic and cryovolcanic sources.
+* Notes created: None.
+* Notes updated: [[Planetary Volcanism]], [[Cryovolcanism]], [[Io]], and [[Lunar Geology]].
+* Notes left unchanged: [[Mercury]], [[Venus]], [[Earth]], [[Moon]], [[Mars]], [[Jupiter]], [[Planetary Surfaces]], [[Natural Satellites]], [[Comparative Planetology]], [[Planetary Extremes]], and [[Planetary Evolution]] already contained and attributed their relevant specialized knowledge. `wiki/index.md` required no change because no page was created and all updated pages were already indexed.
+* Important links added or repaired: Connected volcanic energy, landforms, flows, Olympus Mons, lunar tubes, Io's tidal activity, and icy-world evidence to existing world and process pages; restored proper Obsidian syntax for escaped links in [[Planetary Volcanism]] and [[Cryovolcanism]].
+* Duplicate pages avoided: Reused canonical notes rather than creating Volcanic Landforms, Planetary Lava Flows, Moons with Volcanism, Why Some Worlds Have Volcanoes, Largest Volcano, Lunar Lava Tubes, or duplicate world-volcanism pages.
+* Raw safety: All listed sources were read only; no raw file was modified, moved, renamed, or deleted.
+* Failures: None.
+
+### Source records
+
+* `raw/comprehensive_solar_system_545_files (1)/03_Mercury/053_mercury_volcanism.md` - updated [[Planetary Volcanism]]; [[Mercury]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/04_Venus/072_venus_volcanoes.md` - updated [[Planetary Volcanism]]; [[Venus]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/05_Earth/102_earth_volcanoes.md` - updated [[Planetary Volcanism]]; [[Earth]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/06_The_Moon/119_lunar_lava_tubes.md` - updated [[Lunar Geology]]; [[Moon]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/07_Mars/147_mars_volcanoes.md` - updated [[Planetary Volcanism]]; [[Mars]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/08_Jupiter/180_io_volcanism.md` - updated [[Io]] and [[Planetary Volcanism]]; [[Jupiter]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/309_volcanic_landforms.md` - updated [[Planetary Volcanism]]; [[Planetary Surfaces]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/314_planetary_lava_flows.md` - updated [[Planetary Volcanism]]; [[Planetary Surfaces]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/21_Moons/364_moons_with_volcanism.md` - updated [[Planetary Volcanism]]; [[Natural Satellites]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/26_Why_Deep_Dives/444_why_some_worlds_have_volcanoes.md` - updated [[Planetary Volcanism]]; [[Comparative Planetology]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/29_Extreme_Records/496_largest_volcano.md` - updated [[Planetary Volcanism]]; [[Planetary Extremes]] left unchanged.
+* `raw/comprehensive_solar_system_545_files (1)/30_Advanced_Planetary_Science/514_cryovolcanism.md` - updated [[Cryovolcanism]]; [[Planetary Evolution]] left unchanged.
+
 ## 2026-08-29 - Ten-topic raw-to-wiki ingestion
 
 * Raw files processed: `Aurora.md`, `Eclipses.md`, `Exoplanets.md`, `Heliosphere.md`, `Kuiper Belt.md`, `Lagrange Points.md`, `Meteoroids, Meteors and Meteorites.md`, `Near-Earth Objects.md`, `Oort Cloud.md`, and `Solar Wind.md`.
