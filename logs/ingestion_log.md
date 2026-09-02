@@ -4254,3 +4254,21 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes updated: [[Planetary Magnetism]], [[Ganymede]], [[Europa]], [[Callisto]]
 * Important links added: [[Atmospheric Escape]], [[Aurora]], [[Earth's Magnetosphere]], [[Io]], [[Planetary Atmospheres]], [[Planetary Evolution]], [[Planetary Habitability]], [[Solar Magnetic Field]], [[Solar Wind]], [[Water in the Solar System]]
 * Duplicate pages avoided: Kept planetary dynamos, induced fields, crustal remanence, and magnetospheres consolidated in [[Planetary Magnetism]] rather than creating equivalent pages.
+
+## Changed source ingestion - 2026-09-02
+
+### raw/comprehensive_solar_system_545_files (1)/05_Earth/089_plate_tectonics.md
+
+* Date processed: 2026-09-02
+* Notes created: None
+* Notes updated: [[Planetary Tectonics]]
+* Important links added: [[Earth]], [[Mercury]], [[Venus]], [[Moon]], [[Mars]], [[Io]], [[Europa]], [[Enceladus]]
+* Duplicate pages avoided: Reused [[Planetary Tectonics]] rather than creating a separate Plate Tectonics page; [[Earth]] already contained the source's relevant Earth-specific knowledge and attribution, so it was left unchanged.
+
+### raw/comprehensive_solar_system_545_files (1)/30_Advanced_Planetary_Science/515_geologic_activity_without_plate_tectonics.md
+
+* Date processed: 2026-09-02
+* Notes created: None
+* Notes updated: [[Planetary Tectonics]]
+* Important links added: [[Mercury]], [[Moon]], [[Mars]], [[Venus]], [[Io]], [[Europa]], [[Enceladus]]
+* Duplicate pages avoided: Consolidated non-plate-tectonic activity, stagnant-lid behavior, and episodic-lid behavior in [[Planetary Tectonics]] rather than creating an overlapping page.
