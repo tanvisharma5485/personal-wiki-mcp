@@ -8,7 +8,7 @@ Planetary interiors are the layered, evolving regions beneath planetary surfaces
 * Mantles are generally solid silicate rock, not global magma layers, but can deform and convect over geological time. Pressure-driven mineral phase changes create internal boundaries, while partial melting supplies magma for [[Planetary Volcanism]].
 * Core formation is part of [[Planetary Differentiation]]: mobile dense metal migrates inward through percolation, droplets in magma, larger diapirs, and the merging of pre-existing cores during impacts. Complete melting is not always required.
 * Planetary cores evolve after formation. Cooling, crystallization, latent heat, and compositional buoyancy may sustain motion in electrically conducting fluid, but a core alone does not guarantee an active [[Planetary Magnetism|dynamo]].
-* Giant-planet “cores” differ from terrestrial metallic cores. Their deep heavy-element regions may contain rock- and ice-forming material, have gradual boundaries, and become diluted through redistribution or mixing; Jupiter is a prominent example.
+* Giant-planet “cores” differ from terrestrial metallic cores. [[Gas Giant Interiors]] may contain metallic hydrogen and diluted heavy-element regions, while [[Ice Giant Interiors]] may contain volatile-rich, ionic, superionic, mixed, or compositionally stratified material rather than ordinary ice.
 * The core-mantle boundary thermally couples the two reservoirs: mantle heat transport regulates core cooling, while interior heat helps drive convection, tectonics, volcanism, and long-term [[Planetary Evolution]].
 * Evidence includes mass and radius, bulk density, gravity and moment of inertia, rotational response, magnetic fields, thermal emission, meteorites, high-pressure experiments, and seismic measurements where available.
 * Comparisons reveal distinct outcomes: [[Mercury]] has an exceptionally large partly molten metal-rich core and thin silicate shell; [[Earth]] has a liquid outer core, solid inner core, and convecting solid mantle; [[Jupiter]] likely has an extended, compositionally graded heavy-element region rather than a sharp Earth-like core.
@@ -24,6 +24,8 @@ Planetary interiors are the layered, evolving regions beneath planetary surfaces
 * [[Planetary Surfaces]]
 * [[Terrestrial Planets]]
 * [[Giant Planets]]
+* [[Gas Giant Interiors]]
+* [[Ice Giant Interiors]]
 * [[Mercury]]
 * [[Earth]]
 * [[Jupiter]]

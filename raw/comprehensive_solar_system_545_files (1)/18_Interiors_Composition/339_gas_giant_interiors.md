@@ -1,54 +1,764 @@
 # Gas Giant Interiors
 
-**Dataset ID:** 339
-**Category:** 18 Interiors Composition
-
 ## Overview
 
-Io is Jupiter's intensely tidally heated moon and the most volcanically active known world.
+Gas giants are very large planets composed predominantly of hydrogen and helium, with internal structures fundamentally different from those of rocky terrestrial planets. In the Solar System, Jupiter and Saturn are classified as gas giants. Although they are often pictured as enormous balls of gas, pressure increases so dramatically with depth that their interiors contain dense fluids, electrically conducting hydrogen, helium-rich regions, heavy elements, and possibly partially mixed or diffuse core regions rather than simple gas layers surrounding compact solid cores.
 
-## Detailed Explanation
+Understanding gas giant interiors is important for explaining planetary formation, atmospheric composition, magnetic fields, heat flow, gravitational structure, long-term evolution, and the architecture of giant planets both inside and outside the Solar System.
 
-This topic belongs to comprehensive Solar System and comparative planetary science. It should be understood through formation history, composition, gravity, thermal evolution, orbital dynamics, surfaces, atmospheres, magnetism, observations and exploration.
+Direct observation of their deep interiors is impossible. Scientists therefore infer internal structure using spacecraft measurements of gravity and magnetic fields, atmospheric observations, rotation, planetary shape, heat emission, laboratory experiments at extreme pressures, equations of state, and numerical models.
 
-## Key Scientific Points
+## Jupiter and Saturn
 
-- Interpret this topic using multiple lines of evidence rather than a single image or number.
-- Distinguish present-day properties from formation history and later evolution.
-- Separate direct observation from model-dependent interpretation.
-- Compare equivalent quantities: for giant planets, 'surface' usually means an atmospheric pressure/cloud level, not solid ground.
-- For visible holes, dots or spots, distinguish impact craters from storms, clouds, albedo markings, volcanic features, shadows and imaging artifacts.
+Jupiter and Saturn are the Solar System's two gas giants.
 
-## Evidence and How We Know
+Both planets are dominated by:
 
-Relevant evidence can include spacecraft imaging, spectroscopy, topography, gravity measurements, magnetic measurements, radar, thermal observations, occultations, laboratory physics and dynamical modeling. The strongest conclusions usually come from agreement among several methods.
+- Hydrogen
+- Helium
 
-## Common Misunderstandings
+They also contain smaller quantities of heavier elements and compounds.
 
-- A visible dot is not automatically a crater.
-- 'No atmosphere' often means an extremely tenuous exosphere rather than literally zero particles.
-- Moon counts and mission status can change with new discoveries; current catalogs should be checked before quoting a live count.
-- Planetary temperatures depend on where and how they are measured; cloud-top and solid-surface temperatures are not interchangeable.
-- Gas and ice giants do not have a solid surface comparable with Earth or Mars at the visible cloud tops.
+Despite their similar overall compositions, Jupiter and Saturn differ substantially in mass, density, internal pressure, heat flow, helium distribution, and evolutionary history.
+
+Jupiter is more than three times as massive as Saturn. Its greater mass produces much higher pressures and temperatures in its deep interior.
+
+## Gas Giants Do Not Have Conventional Solid Surfaces
+
+Jupiter and Saturn do not possess a sharply defined solid surface comparable to Earth, Mars, or Mercury.
+
+Descending into either planet, atmospheric gas becomes progressively denser as pressure rises. Eventually, the distinction between ordinary gas and liquid becomes less meaningful because hydrogen enters dense fluid states.
+
+Therefore, the visible cloud tops are not physical surfaces.
+
+The commonly quoted planetary radius is defined using a particular atmospheric pressure level rather than a solid boundary.
+
+## General Internal Structure
+
+A simplified gas giant interior can be described as containing:
+
+- An outer molecular hydrogen-helium envelope
+- Deeper compressed hydrogen-rich fluid
+- Metallic hydrogen at sufficiently high pressure
+- Regions where helium may separate from hydrogen
+- Heavy elements distributed through parts of the interior
+- A central region enriched in heavier material
+
+These regions should not always be imagined as sharply separated spherical shells.
+
+Modern models increasingly allow gradual compositional transitions and extended heavy-element gradients.
+
+## Molecular Hydrogen Region
+
+In the outer portions of Jupiter and Saturn, hydrogen exists primarily in molecular form.
+
+Hydrogen molecules consist of two hydrogen atoms:
+
+H₂
+
+With increasing depth:
+
+- Pressure rises
+- Temperature rises
+- Density increases
+- Molecular hydrogen becomes increasingly compressed
+
+Eventually, hydrogen undergoes major changes in its physical and electronic properties.
+
+## Metallic Hydrogen
+
+At sufficiently high pressures, hydrogen can enter a metallic state.
+
+In metallic hydrogen, electrons are no longer confined to individual hydrogen molecules in the same way as under ordinary conditions. The material becomes electrically conductive and behaves more like a liquid metal.
+
+Large regions of metallic hydrogen are expected inside Jupiter and Saturn.
+
+Because Jupiter is more massive and reaches higher internal pressures, metallic hydrogen occupies a particularly important fraction of its interior.
+
+## Metallic Hydrogen and Magnetic Fields
+
+Electrically conducting fluid moving inside a rotating planet can generate a magnetic field through dynamo action.
+
+Jupiter's powerful magnetic field is thought to be generated primarily by convection within its deep electrically conducting metallic-hydrogen region.
+
+Saturn also possesses a global magnetic field generated by internal dynamo processes.
+
+The details differ between the two planets because their internal structures, rotation, composition, and fluid motions are not identical.
+
+## Jupiter's Deep Interior
+
+A simplified description of Jupiter includes:
+
+Outer atmosphere and molecular hydrogen-helium envelope
+
+↓
+
+Increasingly dense hydrogen-rich fluid
+
+↓
+
+Metallic hydrogen-rich interior
+
+↓
+
+Deep region enriched in heavier elements
+
+Jupiter's deepest structure is more complicated than the traditional picture of a small, sharply bounded rocky core.
+
+Data from NASA's Juno spacecraft have provided evidence consistent with a central heavy-element region that may be extended or compositionally diluted.
+
+This is often described as a:
+
+Diffuse core
+
+or
+
+Dilute core
+
+Rather than all heavy elements being concentrated into a compact central object, some may be distributed across a substantial fraction of Jupiter's deep interior.
+
+## Jupiter's Dilute Core
+
+A dilute core refers to an interior configuration in which the abundance of elements heavier than hydrogen and helium increases toward the center but does not necessarily form a sharp boundary.
+
+Possible explanations include:
+
+- Jupiter formed with a compositionally graded interior
+- Heavy material mixed outward during early evolution
+- Core material partially dissolved into surrounding metallic hydrogen
+- Giant impacts altered the original core structure
+
+The exact history remains uncertain.
+
+## Jupiter's Heavy Elements
+
+In planetary science, the term "heavy elements" generally refers to elements heavier than hydrogen and helium.
+
+Jupiter's heavy material may include components associated with:
+
+- Rock-forming elements
+- Metals
+- Water
+- Ammonia
+- Methane
+- Other compounds incorporated during formation
+
+At the extreme pressures and temperatures of Jupiter's deep interior, these substances do not necessarily exist in the familiar forms seen near Earth's surface.
+
+## Saturn's Deep Interior
+
+Saturn has a broadly similar hydrogen-helium structure but differs significantly from Jupiter because it is less massive and has lower internal pressures.
+
+A simplified Saturn interior includes:
+
+Outer hydrogen-helium atmosphere
+
+↓
+
+Molecular hydrogen-rich envelope
+
+↓
+
+Deeper electrically conducting hydrogen-rich region
+
+↓
+
+Helium-separation region
+
+↓
+
+Heavy-element-enriched deep interior
+
+Like Jupiter, Saturn may not possess a perfectly sharp boundary between a compact core and the surrounding envelope.
+
+Modern models allow a broad composition gradient extending outward from the deepest interior.
+
+## Saturn's Core Region
+
+Saturn is expected to contain a substantial amount of material heavier than hydrogen and helium.
+
+However, the word "core" can be misleading if interpreted as a single sharply bounded solid sphere.
+
+The central region may contain mixtures of:
+
+- Rock-forming material
+- Water-rich material
+- Other heavy elements
+- Hydrogen
+- Helium
+
+under extremely high pressures and temperatures.
+
+Measurements of Saturn's gravity and oscillations provide constraints on this structure.
+
+## Saturn's Ring Seismology
+
+Saturn's rings provide an unusual method for studying the planet's interior.
+
+Oscillations inside Saturn can perturb its gravitational field. These gravitational variations can produce wave patterns in the rings.
+
+By studying these waves, scientists can infer properties of Saturn's internal oscillations and deep structure.
+
+This technique is known as:
+
+Ring seismology
+
+Ring-seismology observations support models in which Saturn has a broad, compositionally stratified central region rather than an extremely compact, sharply defined core.
+
+## Helium Rain
+
+One of the most important processes inside gas giants is the possible separation of helium from hydrogen.
+
+Under certain pressure-temperature conditions, helium becomes less soluble in metallic hydrogen.
+
+Helium can then form droplets that sink deeper into the planet.
+
+This process is commonly called:
+
+Helium rain
+
+It is particularly important for understanding Saturn.
+
+## Effects of Helium Rain
+
+As helium droplets sink:
+
+- Gravitational potential energy is released
+- Energy is converted into heat
+- Helium becomes depleted in some upper regions
+- Deeper layers become enriched in helium
+- The planet's thermal evolution is altered
+
+Helium rain provides an additional internal energy source.
+
+It is thought to help explain why Saturn emits more internal heat than would be expected from simple cooling models.
+
+Helium separation may also occur within Jupiter, although its importance and extent differ from Saturn.
+
+## Internal Heat
+
+Gas giants emit energy from their interiors.
+
+Jupiter and Saturn both radiate more energy than they receive from the Sun when considering their total thermal emission.
+
+This internal energy comes from several processes.
+
+## Primordial Heat
+
+Gas giants retained substantial heat from their formation.
+
+During formation:
+
+- Material accreted gravitationally
+- Gas was compressed
+- Collisions converted kinetic energy into heat
+- The growing planet contracted
+
+Some of this primordial energy continues escaping billions of years later.
+
+## Gravitational Contraction
+
+As a giant planet slowly cools, it can contract.
+
+Gravitational contraction converts gravitational potential energy into thermal energy.
+
+This process contributes to the long-term luminosity of giant planets.
+
+It is commonly associated with the Kelvin-Helmholtz mechanism.
+
+The planet does not need to be undergoing rapid collapse; very slow contraction over geological timescales can release substantial energy.
+
+## Saturn's Excess Luminosity
+
+Simple homogeneous cooling models historically underestimated Saturn's present luminosity.
+
+Helium differentiation provides an important additional source of energy.
+
+As helium separates from hydrogen and sinks inward, gravitational energy is released.
+
+This slows Saturn's cooling and helps maintain its observed thermal emission.
+
+## Pressure Inside Gas Giants
+
+Pressure increases enormously toward the centers of Jupiter and Saturn.
+
+Deep pressures reach millions of times Earth's atmospheric pressure.
+
+These extreme pressures fundamentally change the behavior of matter.
+
+Hydrogen, helium, water-rich compounds, rocks, and other materials may adopt phases and chemical behaviors very different from those observed under ordinary surface conditions.
+
+## Temperature Inside Gas Giants
+
+Temperature also increases with depth.
+
+The deep interiors of Jupiter and Saturn reach temperatures of thousands to tens of thousands of kelvin.
+
+Their central regions are therefore not cold solid bodies despite being far from the Sun.
+
+High temperature and enormous pressure together determine the physical state of deep planetary material.
+
+## Equations of State
+
+An equation of state describes how a material's properties vary with quantities such as:
+
+- Pressure
+- Temperature
+- Density
+- Composition
+
+Accurate hydrogen-helium equations of state are essential for modeling gas giant interiors.
+
+Small differences in assumed material behavior can change predicted:
+
+- Density profiles
+- Core masses
+- Heavy-element distributions
+- Cooling histories
+- Gravity fields
+
+Researchers combine theoretical calculations with high-pressure laboratory experiments to improve these models.
+
+## Convection
+
+Much of a gas giant's interior can transport heat through convection.
+
+Hotter, less dense material tends to rise while cooler, denser material sinks.
+
+However, convection can be modified or inhibited by compositional gradients.
+
+If composition changes strongly with depth, the resulting density stratification can reduce large-scale mixing.
+
+This means gas giant interiors may contain both convective and compositionally stratified regions.
+
+## Composition Gradients
+
+A composition gradient exists when the abundance of different materials changes gradually with depth.
+
+For example, heavy-element abundance may increase toward the center.
+
+Such gradients are important because they affect:
+
+- Heat transport
+- Mixing
+- Planetary cooling
+- Interior oscillations
+- Magnetic-field generation
+- Long-term evolution
+
+A gas giant therefore cannot always be represented accurately by a few perfectly homogeneous layers.
+
+## Core Erosion
+
+Some models propose that material originally concentrated in a compact core could interact with the surrounding metallic hydrogen.
+
+Under suitable conditions, components of the core may become soluble or partially mixed into the envelope.
+
+This process is often called:
+
+Core erosion
+
+If it occurs efficiently, it could transform an initially compact core into a more extended heavy-element-rich region.
+
+The efficiency and history of this process remain active research questions.
+
+## Giant Impacts and Interior Mixing
+
+Large collisions during the early Solar System may also have modified gas giant interiors.
+
+A sufficiently energetic impact could:
+
+- Disturb a primordial core
+- Mix heavy material outward
+- Create compositional gradients
+- Alter subsequent thermal evolution
+
+Some models investigate giant impacts as possible explanations for Jupiter's dilute-core structure.
+
+These scenarios remain hypotheses rather than uniquely established histories.
+
+## Gravity as a Probe of the Interior
+
+A planet's gravity field depends on how mass is distributed inside it.
+
+Rapidly rotating gas giants are not perfect spheres.
+
+Rotation produces an equatorial bulge, and internal density variations affect the external gravitational field.
+
+Spacecraft can measure small changes in their motion caused by these gravitational variations.
+
+Scientists express important components of giant-planet gravity fields using gravitational harmonics such as:
+
+J₂
+
+J₄
+
+J₆
+
+These measurements constrain interior models.
+
+## Juno and Jupiter
+
+NASA's Juno spacecraft has dramatically improved measurements of Jupiter's:
+
+- Gravity field
+- Magnetic field
+- Atmospheric structure
+- Rotation-related properties
+- Deep atmospheric dynamics
+
+Juno's precise gravity measurements revealed that Jupiter's internal mass distribution cannot be fully described by the simplest traditional models.
+
+The observations support more complex possibilities involving deep atmospheric flows and a distributed heavy-element region.
+
+## Cassini and Saturn
+
+NASA's Cassini mission provided high-precision measurements of Saturn's:
+
+- Gravity field
+- Magnetic field
+- Rotation-related properties
+- Rings
+- Atmosphere
+
+Its final close orbits substantially improved constraints on Saturn's interior.
+
+Cassini data, combined with ring seismology, have helped refine models of Saturn's deep structure and central heavy-element distribution.
+
+## Rotation and Planetary Shape
+
+Jupiter and Saturn rotate rapidly.
+
+Rapid rotation causes them to become oblate:
+
+Their equatorial radii are larger than their polar radii.
+
+The amount of flattening depends on:
+
+- Rotation
+- Gravity
+- Internal density distribution
+
+Planetary shape therefore provides another constraint on interior structure.
+
+## Differential Rotation
+
+Gas giants do not behave like rigid solid objects.
+
+Atmospheric regions at different latitudes can rotate at different rates.
+
+Deep zonal winds may extend thousands of kilometers below visible cloud levels.
+
+Separating the gravitational effects of atmospheric flows from those of the deeper static interior is an important part of interpreting spacecraft gravity measurements.
+
+## Magnetic-Field Measurements
+
+Magnetic fields provide information about electrically conducting regions inside planets.
+
+Jupiter's magnetic field is strong and complex.
+
+Saturn's magnetic field is unusually axisymmetric, meaning its magnetic axis is closely aligned with its rotation axis.
+
+Understanding these fields requires models of:
+
+- Electrical conductivity
+- Fluid convection
+- Rotation
+- Dynamo geometry
+- Interior composition
+
+## Gas Giant Formation
+
+Interior structure preserves information about how giant planets formed.
+
+Two major formation frameworks are commonly discussed.
+
+## Core Accretion
+
+In the core-accretion model, solid material first accumulates into a sufficiently massive planetary embryo.
+
+Once this body becomes massive enough, it rapidly captures hydrogen and helium from the protoplanetary disk.
+
+Simplified sequence:
+
+Dust and solids
+
+↓
+
+Planetesimals and pebbles
+
+↓
+
+Growing heavy-element-rich core
+
+↓
+
+Gas accretion
+
+↓
+
+Giant planet
+
+Core accretion is a leading framework for giant-planet formation.
+
+## Disk Instability
+
+Another proposed mechanism is gravitational instability in a massive protoplanetary disk.
+
+Under suitable conditions, part of the disk could become gravitationally unstable and collapse into a giant gaseous object.
+
+Subsequent evolution could change its composition and internal structure.
+
+Determining which formation pathways dominate under different circumstances is an important topic in exoplanet and planetary science.
+
+## Heavy Elements and Formation History
+
+The quantity and distribution of heavy elements inside a giant planet provide clues about its formation.
+
+Interior measurements can potentially constrain:
+
+- Amount of solid material accreted
+- Formation location
+- Gas-accretion history
+- Planetesimal dissolution
+- Core formation
+- Interior mixing
+- Giant impacts
+- Planet migration
+
+Therefore, present-day structure acts as a partial record of early planetary evolution.
+
+## Jupiter Versus Saturn
+
+Jupiter and Saturn share the same broad classification but have important interior differences.
+
+Jupiter:
+
+- Is much more massive
+- Reaches higher internal pressures
+- Contains an extensive metallic-hydrogen region
+- Has a very powerful magnetic field
+- May possess a dilute heavy-element core
+- Has deep atmospheric flows detected through gravity measurements
+
+Saturn:
+
+- Is less massive and less dense
+- Has a larger relative role for helium separation
+- Emits substantial internal heat
+- Has an unusually axisymmetric magnetic field
+- Has interior constraints from both spacecraft gravity and ring seismology
+- May contain a broad compositionally stratified central region
+
+## Gas Giants Versus Terrestrial Planets
+
+Terrestrial planets such as Earth are dominated by rock and metal and possess relatively well-defined solid surfaces.
+
+Gas giants are dominated by hydrogen and helium and lack conventional solid surfaces.
+
+Terrestrial interiors are commonly described using:
+
+Crust
+
+Mantle
+
+Core
+
+Gas giant interiors are more naturally described using:
+
+Atmospheric and molecular envelopes
+
+Dense hydrogen-rich fluids
+
+Electrically conducting metallic hydrogen
+
+Composition gradients
+
+Heavy-element-rich deep regions
+
+The physical transitions in gas giants may be gradual rather than sharply layered.
+
+## Gas Giants Versus Ice Giants
+
+Jupiter and Saturn are gas giants.
+
+Uranus and Neptune are ice giants.
+
+All four are giant planets, but their bulk compositions differ.
+
+Gas giants are dominated by hydrogen and helium.
+
+Ice giants contain a much larger proportion of heavier materials associated with compounds such as:
+
+- Water
+- Ammonia
+- Methane
+
+along with rock-forming material and outer hydrogen-helium envelopes.
+
+The term "ice" refers primarily to the types of volatile compounds incorporated during formation. It does not imply that the deep interiors are simply made of ordinary frozen ice.
+
+## Why Gas Giant Interiors Matter for Exoplanets
+
+Thousands of exoplanets include many giant planets.
+
+Scientists use knowledge of Jupiter and Saturn to interpret:
+
+- Exoplanet masses
+- Radii
+- Densities
+- Atmospheric compositions
+- Heavy-element enrichment
+- Thermal evolution
+- Inflation of hot Jupiters
+- Formation histories
+
+However, exoplanets can experience conditions very different from Jupiter and Saturn, particularly when orbiting extremely close to their stars.
+
+## Mass-Radius Relationships
+
+A giant planet's mass and radius provide clues about its internal composition.
+
+A planet with a relatively small radius for its mass may contain:
+
+- More heavy elements
+- A larger heavy-element-rich interior
+- Different thermal history
+
+A larger radius can reflect:
+
+- Higher internal entropy
+- Strong stellar heating
+- Younger age
+- Additional internal energy sources
+
+Mass and radius alone do not uniquely determine internal structure.
+
+## Degeneracy of Interior Models
+
+A major challenge in planetary interior science is degeneracy.
+
+Different combinations of:
+
+- Composition
+- Temperature
+- Layer boundaries
+- Heavy-element distribution
+- Equations of state
+
+can sometimes produce similar observable properties.
+
+Therefore, there may not be a single unique interior model consistent with available measurements.
+
+Scientists combine multiple independent observations to reduce this uncertainty.
+
+## How Scientists Study Gas Giant Interiors
+
+Major methods include:
+
+- Spacecraft gravity measurements
+- Magnetic-field measurements
+- Atmospheric composition measurements
+- Planetary shape
+- Rotation measurements
+- Thermal emission
+- Ring seismology for Saturn
+- High-pressure laboratory experiments
+- Quantum-mechanical calculations
+- Equations of state
+- Numerical interior models
+- Planet-formation simulations
+- Comparative studies of exoplanets
+
+No single method completely determines the interior.
+
+## Major Scientific Uncertainties
+
+Important unresolved questions include:
+
+- How massive are Jupiter's and Saturn's heavy-element-rich regions?
+- How broadly are heavy elements distributed?
+- Did Jupiter originally possess a compact core?
+- Has core erosion occurred?
+- Did giant impacts modify Jupiter's interior?
+- Exactly where and how does helium separation occur?
+- How strongly do compositional gradients inhibit convection?
+- How are Saturn's deep interior and ring oscillations connected?
+- How do hydrogen and helium behave at the highest planetary pressures?
+- How deeply do atmospheric winds penetrate?
+- How have Jupiter and Saturn cooled over Solar System history?
+- Which aspects of their present interiors preserve their original formation conditions?
+
+These questions remain active areas of planetary research.
+
+## Common Misconceptions
+
+### Gas Giants Are Made Entirely of Ordinary Gas
+
+Incorrect.
+
+Hydrogen becomes extremely compressed with depth and enters dense fluid and metallic states.
+
+### Jupiter Has a Normal Solid Surface
+
+Incorrect.
+
+There is no conventional solid surface beneath Jupiter's clouds comparable to Earth's surface.
+
+### Scientists Have Directly Seen Jupiter's Core
+
+Incorrect.
+
+The deep interior is inferred indirectly from gravity, magnetic, atmospheric, laboratory, and theoretical evidence.
+
+### Jupiter Definitely Has a Small Solid Core With a Sharp Boundary
+
+This is too simplistic.
+
+Modern observations and models allow an extended or dilute heavy-element-rich central region.
+
+### Metallic Hydrogen Is Ordinary Metal
+
+Incorrect.
+
+Metallic hydrogen is hydrogen under extreme pressure in an electrically conducting state.
+
+### Saturn's Rings Are Unrelated to Its Interior
+
+Incorrect.
+
+Waves in Saturn's rings can be excited by oscillations inside Saturn and therefore provide information about its deep structure.
+
+### Helium Rain Means Liquid Helium Falls Through an Empty Atmosphere
+
+Incorrect.
+
+The process occurs deep inside dense planetary fluid where helium separates from hydrogen and migrates downward.
+
+### Gas Giants and Ice Giants Have the Same Interior Structure
+
+Incorrect.
+
+Jupiter and Saturn are much more strongly dominated by hydrogen and helium, whereas Uranus and Neptune contain much larger fractions of heavier volatile-rich material.
+
+## Summary
+
+Gas giant interiors are complex high-pressure environments dominated by hydrogen and helium but containing significant quantities of heavier elements. Jupiter and Saturn transition from molecular hydrogen-rich outer regions into dense electrically conducting interiors where metallic hydrogen becomes important. Their deepest regions may contain broad heavy-element gradients rather than simple sharply bounded solid cores.
+
+Jupiter's gravity field, measured with exceptional precision by Juno, supports sophisticated interior models that may include a dilute core and deep atmospheric flows. Saturn's gravity field, Cassini observations, ring seismology, and thermal emission indicate an internally complex planet in which helium separation and composition gradients play important roles.
+
+Gas giant interiors connect planetary formation, high-pressure physics, magnetic dynamos, atmospheric dynamics, thermal evolution, and exoplanet science. Although spacecraft have greatly improved our understanding of Jupiter and Saturn, the exact distribution of material deep inside them remains one of the major unresolved problems in planetary science.
 
 ## Related Topics
 
-- [[Solar System Overview]]
-- [[Solar System Master Comparison]]
-- [[Natural Satellites Overview]]
-- [[Tidal Forces]]
-
-## Search Keywords
-
-18 interiors composition, gas, giant, interiors, planetary science, solar system
-
-## Questions This Note Should Help Answer
-
-- What is Gas Giant Interiors?
-- What physical processes explain Gas Giant Interiors?
-- How does Gas Giant Interiors compare with related Solar System bodies or processes?
-- What observations support our understanding of Gas Giant Interiors?
-
-## Scope Note
-
-This knowledge-base note prioritizes established mechanisms and stable concepts. Dynamic catalog values such as exact moon counts, mission status, and newly revised numerical estimates should be checked against current authoritative planetary-science sources when a live value is required.
+- [[Planetary Interiors]]
+- [[Planetary Differentiation]]
+- [[Planet Formation]]
+- [[Planetary Evolution]]
+- [[Jupiter]]
+- [[Saturn]]
+- [[Giant Planets]]
+- [[Planetary Magnetism]]
+- [[Solar System Formation]]
+- [[Exoplanets]]
+- [[Comparative Planetology]]

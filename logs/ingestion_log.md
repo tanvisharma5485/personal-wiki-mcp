@@ -4352,3 +4352,23 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes left unchanged: [[Planetary Atmospheres]], [[Planetary Evolution]], [[Planetary Habitability]], [[Planetary Magnetism]], [[Water in the Solar System]], [[Exoplanets]], and individual world pages retained their existing specialized knowledge.
 * Important links added: No new link targets; existing links were retained while their relationships to escape mechanisms, water loss, replenishment, magnetic environments, and exoplanet evolution were clarified.
 * Duplicate pages avoided: Reused [[Atmospheric Escape]] and kept its thermal, non-thermal, water-loss, observational, and exoplanet material consolidated rather than creating separate overlapping pages.
+
+## Changed source ingestion - 2026-09-03
+
+### raw/comprehensive_solar_system_545_files (1)/18_Interiors_Composition/339_gas_giant_interiors.md
+
+* Date processed: 2026-09-03
+* Notes created: [[Gas Giant Interiors]]
+* Notes updated: [[Planetary Interiors]], [[Giant Planets]], wiki/index.md
+* Notes left unchanged: [[Jupiter]], [[Saturn]], [[Planetary Magnetism]], [[Planetary Evolution]], and [[Planet Formation]] already preserve their specialized knowledge.
+* Important links added: [[Planetary Interiors]], [[Giant Planets]], [[Ice Giant Interiors]], [[Jupiter]], [[Saturn]], [[Planetary Magnetism]], [[Planetary Evolution]], [[Planet Formation]], [[Planetary Rings]], [[Planetary Migration]], [[Exoplanets]]
+* Duplicate pages avoided: Kept metallic hydrogen, planetary dynamos, formation, and world-specific material connected to their existing broader notes rather than creating additional overlapping pages.
+
+### raw/comprehensive_solar_system_545_files (1)/18_Interiors_Composition/340_ice_giant_interiors.md
+
+* Date processed: 2026-09-03
+* Notes created: [[Ice Giant Interiors]]
+* Notes updated: [[Planetary Interiors]], [[Giant Planets]], wiki/index.md
+* Notes left unchanged: [[Uranus]], [[Neptune]], [[Planetary Magnetism]], [[Planetary Evolution]], [[Planet Formation]], and [[Voyager Program]] already preserve their specialized knowledge.
+* Important links added: [[Planetary Interiors]], [[Giant Planets]], [[Gas Giant Interiors]], [[Uranus]], [[Neptune]], [[Planetary Magnetism]], [[Planetary Evolution]], [[Planet Formation]], [[Planetary Migration]], [[Voyager Program]], [[Exoplanets]]
+* Duplicate pages avoided: Kept high-pressure water phases, dynamo theory, formation, migration, exploration, and world-specific material connected to existing notes rather than splitting them into redundant pages.

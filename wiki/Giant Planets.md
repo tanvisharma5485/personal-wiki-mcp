@@ -5,6 +5,8 @@ Jupiter and Saturn are hydrogen-helium gas giants, while Uranus and Neptune are 
 ## Key Points
 
 * Visible giant-planet surfaces are atmospheric pressure or cloud levels rather than solid ground.
+* [[Gas Giant Interiors|Gas giants]] transition from molecular hydrogen-helium envelopes into dense conducting hydrogen and may have broad heavy-element gradients rather than sharp cores.
+* [[Ice Giant Interiors|Ice giants]] have smaller hydrogen-helium envelopes and larger proportions of volatile- and rock-rich material in complex high-pressure states; "ice" does not mean ordinary frozen material at depth.
 * Rapid rotation, internal heat, circulation, and composition shape their bands, storms, and winds.
 * All four have rings, moons, and magnetic environments, but these systems differ substantially.
 
@@ -14,6 +16,9 @@ Jupiter and Saturn are hydrogen-helium gas giants, while Uranus and Neptune are 
 * [[Saturn]]
 * [[Uranus]]
 * [[Neptune]]
+* [[Gas Giant Interiors]]
+* [[Ice Giant Interiors]]
+* [[Planetary Interiors]]
 * [[Planetary Atmospheres]]
 * [[Planetary Rings]]
 
