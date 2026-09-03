@@ -6,6 +6,9 @@ Planetary surfaces record impacts, volcanism, tectonics, erosion, deposition, ic
 
 * [[Impact Cratering]] forms structures through shock, excavation, ejecta deposition, and fracturing.
 * Crater abundance generally reflects the balance between surface age and resurfacing by geology or atmosphere; rims, ejecta, secondary craters, and basin morphology help distinguish impacts from other depressions.
+* [[Crater Counting]] uses mapped crater size-frequency distributions to estimate relative and model surface ages, while accounting for secondaries, saturation, erosion, burial, resolution, and chronology uncertainty.
+* Crater weathering alters material in place, erosion transports it, and resurfacing covers or replaces terrain; these distinct processes can all weaken the visible record. Fresh craters also expose less-weathered subsurface material.
+* [[Impact Melting]] produces melt pools, sheets, glass, and breccias during shock heating; this material is distinct from lava that may flood a basin later.
 * Bright and dark markings may be clouds, storms, albedo differences, volcanic deposits, shadows, or image artifacts rather than craters.
 
 ## Related Topics
@@ -16,6 +19,8 @@ Planetary surfaces record impacts, volcanism, tectonics, erosion, deposition, ic
 * [[Water in the Solar System]]
 * [[Comparative Planetology]]
 * [[Impact Cratering]]
+* [[Crater Counting]]
+* [[Impact Melting]]
 
 ## Sources
 

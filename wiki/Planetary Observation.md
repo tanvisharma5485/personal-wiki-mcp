@@ -7,6 +7,7 @@ Planetary science relies on complementary observing and measurement methods rath
 * Imaging, radar, and spectroscopy constrain surfaces, composition, and atmospheres.
 * Radio tracking and spacecraft motion constrain mass and gravity fields.
 * Magnetic, thermal, occultation, laboratory, and dynamical evidence refine models and test interpretations.
+* [[Crater Counting]] combines geological mapping, imagery, topography or radar, diameter measurements, statistics, and chronology models; resolution, secondary craters, resurfacing, and model assumptions limit inferred ages.
 
 ## Related Topics
 
@@ -15,6 +16,7 @@ Planetary science relies on complementary observing and measurement methods rath
 * [[Planetary Surfaces]]
 * [[Planetary Atmospheres]]
 * [[Planetary Interiors]]
+* [[Crater Counting]]
 
 ## Sources
 

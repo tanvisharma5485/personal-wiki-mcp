@@ -4406,3 +4406,102 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes updated: [[Planetary Rings]], wiki/index.md
 * Important links added: [[Ring Particles]], [[Orbital Dynamics]], [[Natural Satellites]], [[Tides]], [[Saturn]], [[Mimas]], [[Uranus]], [[Neptune]], [[Planetary Interiors]]
 * Duplicate pages avoided: Kept ring-specific gaps, waves, shepherding, and ring seismology together while linking to the broader [[Orbital Dynamics]] note.
+
+## Changed source ingestion - 2026-09-03
+
+### raw/comprehensive_solar_system_545_files (1)/13_Asteroids/282_impact_craters.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]]
+* Important links added: [[Crater Counting]], [[Impact Melting]], [[Planetary Habitability]], [[Planetary Defense]]
+* Duplicate pages avoided: Reused [[Impact Cratering]] instead of creating an equivalent Impact Craters page.
+
+### raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/302_planetary_craters.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]], [[Planetary Surfaces]]
+* Important links added: [[Crater Counting]], [[Impact Melting]]
+* Duplicate pages avoided: Consolidated planetary-crater morphology and preservation in [[Impact Cratering]].
+
+### raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/303_crater_formation.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]]
+* Important links added: [[Impact Melting]], [[Planetary Interiors]]
+* Duplicate pages avoided: Kept formation stages in [[Impact Cratering]] rather than creating a separate Crater Formation page.
+
+### raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/304_simple_vs_complex_craters.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]]
+* Important links added: [[Planetary Surfaces]], [[Planetary Interiors]]
+* Duplicate pages avoided: Kept simple, complex, peak-ring, and basin morphology together in [[Impact Cratering]].
+
+### raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/305_impact_basins.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]]
+* Important links added: [[Impact Melting]], [[Planetary Volcanism]], [[Planetary Interiors]]
+* Duplicate pages avoided: Treated impact basins as the largest cratering class rather than creating an overlapping basin page.
+
+### raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/306_why_some_worlds_have_more_craters.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]], [[Planetary Surfaces]]
+* Important links added: [[Crater Counting]], [[Planetary Evolution]]
+* Duplicate pages avoided: Consolidated crater production, preservation, and resurfacing with the existing cratering synthesis.
+
+### raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/307_crater_erosion.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]], [[Planetary Surfaces]]
+* Important links added: [[Planetary Tectonics]], [[Planetary Volcanism]]
+* Duplicate pages avoided: Kept erosion and degradation as preservation processes within existing notes.
+
+### raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/308_crater_weathering.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]], [[Planetary Surfaces]]
+* Important links added: [[Planetary Habitability]], [[Water in the Solar System]]
+* Duplicate pages avoided: Kept crater weathering connected to the broader cratering and surface notes.
+
+### raw/comprehensive_solar_system_545_files (1)/16_Planetary_Surfaces/317_crater_counting.md
+
+* Date processed: 2026-09-03
+* Notes created: [[Crater Counting]]
+* Notes updated: [[Impact Cratering]], [[Planetary Surfaces]], wiki/index.md
+* Important links added: [[Planetary Observation]], [[Planetary Evolution]], [[Moon]], [[Mars]], [[Mercury]], [[Venus]]
+* Duplicate pages avoided: Combined crater-counting principles and workflow in one page shared with the methods source.
+
+### raw/comprehensive_solar_system_545_files (1)/28_Observation_Measurement/485_crater_counting_methods.md
+
+* Date processed: 2026-09-03
+* Notes created: [[Crater Counting]]
+* Notes updated: [[Impact Cratering]], [[Planetary Surfaces]], [[Planetary Observation]], wiki/index.md
+* Important links added: [[Moon]], [[Europa]], [[Ganymede]], [[Callisto]], [[Enceladus]]
+* Duplicate pages avoided: Reused [[Crater Counting]] rather than creating a synonymous Crater Counting Methods page.
+
+### raw/comprehensive_solar_system_545_files (1)/30_Advanced_Planetary_Science/513_impact_melting.md
+
+* Date processed: 2026-09-03
+* Notes created: [[Impact Melting]]
+* Notes updated: [[Impact Cratering]], [[Planetary Surfaces]], wiki/index.md
+* Important links added: [[Planetary Interiors]], [[Planetary Volcanism]], [[Planetary Habitability]], [[Lunar Geology]], [[Meteoroids, Meteors and Meteorites]]
+* Duplicate pages avoided: Kept melt products, cooling, dating, and hydrothermal effects in one dedicated page.
+
+### raw/comprehensive_solar_system_545_files (1)/32_Cross_Concept/537_impact_history_of_solar_system.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Impact Cratering]]
+* Notes left unchanged: [[Solar System Formation]], [[Planetary Evolution]], [[Asteroids]], [[Planetary Defense]], and world-specific pages already retain their specialized knowledge and source attribution.
+* Important links added: [[Solar System Formation]], [[Planetary Evolution]], [[Asteroids]], [[Comets]], [[Planetary Defense]]
+* Duplicate pages avoided: Integrated durable impact-history context into [[Impact Cratering]] instead of duplicating the broader formation and evolution notes.
