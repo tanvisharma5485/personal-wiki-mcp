@@ -1,4 +1,4 @@
-import asyncio
+﻿import asyncio
 import json
 
 from mcp import ClientSession
@@ -9,12 +9,12 @@ MCPS = {
     "MCP 1": {
         "url": "https://personal-wiki-mcp.onrender.com/mcp",
         "expected_tiers": [1, 2, 3],
-        "expected_count": 100,
+        "expected_count": 102,
     },
     "MCP 2": {
         "url": "https://personal-wiki-mcp-tier2.onrender.com/mcp",
         "expected_tiers": [2, 3],
-        "expected_count": 84,
+        "expected_count": 86,
     },
     "MCP 3": {
         "url": "https://personal-wiki-mcp-tier3.onrender.com/mcp",
