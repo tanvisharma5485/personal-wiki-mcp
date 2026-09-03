@@ -9,12 +9,12 @@ MCPS = {
     "MCP 1": {
         "url": "https://personal-wiki-mcp.onrender.com/mcp",
         "expected_tiers": [1, 2, 3],
-        "expected_count": 102,
+        "expected_count": 104,
     },
     "MCP 2": {
         "url": "https://personal-wiki-mcp-tier2.onrender.com/mcp",
         "expected_tiers": [2, 3],
-        "expected_count": 86,
+        "expected_count": 88,
     },
     "MCP 3": {
         "url": "https://personal-wiki-mcp-tier3.onrender.com/mcp",
@@ -226,3 +226,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+

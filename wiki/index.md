@@ -76,6 +76,8 @@ Alphabetical navigation for all Markdown knowledge notes in the wiki.
 * [[Planetary Volcanism]]
 * [[Pluto]]
 * [[Rhea]]
+* [[Ring Gaps and Resonances]]
+* [[Ring Particles]]
 * [[Saturn]]
 * [[Scattered Disc]]
 * [[Sedna]]

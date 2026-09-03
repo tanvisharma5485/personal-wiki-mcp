@@ -4372,3 +4372,37 @@ Processed the complete raw corpus on 2026-08-27. Raw files were read-only and re
 * Notes left unchanged: [[Uranus]], [[Neptune]], [[Planetary Magnetism]], [[Planetary Evolution]], [[Planet Formation]], and [[Voyager Program]] already preserve their specialized knowledge.
 * Important links added: [[Planetary Interiors]], [[Giant Planets]], [[Gas Giant Interiors]], [[Uranus]], [[Neptune]], [[Planetary Magnetism]], [[Planetary Evolution]], [[Planet Formation]], [[Planetary Migration]], [[Voyager Program]], [[Exoplanets]]
 * Duplicate pages avoided: Kept high-pressure water phases, dynamo theory, formation, migration, exploration, and world-specific material connected to existing notes rather than splitting them into redundant pages.
+
+## Changed source ingestion - 2026-09-03
+
+### raw/comprehensive_solar_system_545_files (1)/20_Rings/351_planetary_ring_systems.md
+
+* Date processed: 2026-09-03
+* Notes created: [[Ring Particles]], [[Ring Gaps and Resonances]]
+* Notes updated: [[Planetary Rings]], wiki/index.md
+* Important links added: [[Giant Planets]], [[Natural Satellites]], [[Orbital Dynamics]], [[Tides]], [[Planet Formation]], [[Enceladus]]
+* Duplicate pages avoided: Kept the overall ring-system synthesis in [[Planetary Rings]] and separated only the substantial particle-physics and resonance concepts.
+
+### raw/comprehensive_solar_system_545_files (1)/20_Rings/352_how_planetary_rings_form.md
+
+* Date processed: 2026-09-03
+* Notes created: None
+* Notes updated: [[Planetary Rings]]
+* Important links added: [[Natural Satellites]], [[Tides]], [[Planet Formation]], [[Enceladus]], [[Orbital Dynamics]]
+* Duplicate pages avoided: Consolidated formation, maintenance, Roche-limit, spreading, and ring-moon recycling material in [[Planetary Rings]] instead of creating an overlapping formation page.
+
+### raw/comprehensive_solar_system_545_files (1)/20_Rings/355_ring_particles.md
+
+* Date processed: 2026-09-03
+* Notes created: [[Ring Particles]]
+* Notes updated: [[Planetary Rings]], wiki/index.md
+* Important links added: [[Ring Gaps and Resonances]], [[Saturn]], [[Jupiter]], [[Uranus]], [[Neptune]], [[Orbital Dynamics]], [[Natural Satellites]], [[Space Environment]]
+* Duplicate pages avoided: Consolidated particle size, composition, collisions, self-gravity wakes, and charged-dust behavior in one dedicated page.
+
+### raw/comprehensive_solar_system_545_files (1)/20_Rings/357_ring_gaps_and_resonances.md
+
+* Date processed: 2026-09-03
+* Notes created: [[Ring Gaps and Resonances]]
+* Notes updated: [[Planetary Rings]], wiki/index.md
+* Important links added: [[Ring Particles]], [[Orbital Dynamics]], [[Natural Satellites]], [[Tides]], [[Saturn]], [[Mimas]], [[Uranus]], [[Neptune]], [[Planetary Interiors]]
+* Duplicate pages avoided: Kept ring-specific gaps, waves, shepherding, and ring seismology together while linking to the broader [[Orbital Dynamics]] note.
