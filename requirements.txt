@@ -2,3 +2,4 @@ mcp==1.27.2
 psycopg2-binary
 python-dotenv
 uvicorn
+PyJWT[crypto]==2.13.0

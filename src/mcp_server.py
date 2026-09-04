@@ -3,13 +3,19 @@ import os
 import psycopg2
 from dotenv import load_dotenv
 from mcp.server.fastmcp import FastMCP
+from mcp.server.auth.settings import AuthSettings
 
 from thread_saver import save_thread_message
+from auth0_verifier import Auth0TokenVerifier
 
 
 load_dotenv()
 
 port = int(os.getenv("PORT", "8000"))
+
+AUTH0_DOMAIN = os.environ["AUTH0_DOMAIN"].rstrip("/")
+AUTH0_AUDIENCE = os.environ["AUTH0_AUDIENCE"]
+MCP_PUBLIC_URL = os.getenv("MCP_PUBLIC_URL", AUTH0_AUDIENCE)
 
 mcp = FastMCP(
     "personal-wiki",
@@ -51,7 +57,13 @@ mcp = FastMCP(
         "rewriting either value."
     ),
     host="0.0.0.0",
-    port=port
+    port=port,
+    token_verifier=Auth0TokenVerifier(),
+    auth=AuthSettings(
+        issuer_url=AUTH0_DOMAIN,
+        resource_server_url=MCP_PUBLIC_URL,
+        required_scopes=["wiki:read"],
+    ),
 )
 
 
